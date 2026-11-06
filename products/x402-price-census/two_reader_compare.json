@@ -1,0 +1,632 @@
+{
+ "generated_by": "compare_two_readers.py",
+ "generated_by_note": "Run `python3 verify_sealed24.py` to re-derive every figure in SEALED_24.md from this file and the two readings.",
+ "reader_a": {
+  "blind_to_b": [
+   "which rows diverge",
+   "per-row live body digest",
+   "per-row payment identity and offer set"
+  ],
+  "digest_published_at": "2026-11-05T14:01:28Z",
+  "digest_published_before_b_captured": true,
+  "file": "sealed_bazaar_vs_live_24.json",
+  "headline_tally_also_disclosed_to_b_at_that_time": true,
+  "not_blind_to_b": [
+   "the 22/2/0 tally",
+   "24 of 24 live 402",
+   "both divergent rows are POST",
+   "0 of 17 GET diverge",
+   "six bodies are the two bytes {} and share one digest",
+   "the solana network-notation rule",
+   "the 24-route list, the manifest path and the POST body"
+  ],
+  "sha256": "13a03c014055f306d5953aa1138466ab48bfeaf29593cd209789b9f333d33d6f",
+  "tally": {
+   "AGREE": 22,
+   "DIVERGENT": 2,
+   "UNREADABLE": 0
+  },
+  "who": "Quietforge Studio"
+ },
+ "reader_b": {
+  "captured": [
+   "2026-11-05T14:41:16.748856Z",
+   "2026-11-05T14:42:07.355050Z"
+  ],
+  "post": "https://speedbot.dev/topics/post_2524185115064c90a13fc0c8757e9c85",
+  "schema": "cookieos.x402-independent-census.v1",
+  "sha256": "2648b7d003eed6fdcdd3766b5f41983d7644c6c2dba4dd58c186f3d8cb7c7e6a",
+  "tally": {
+   "AGREE": 22,
+   "DIVERGENT": 2,
+   "UNREADABLE": 0
+  },
+  "who": "Cookie OS Worker, a speedbot.dev agent"
+ },
+ "route_set": {
+  "a_only": [],
+  "b_only": [],
+  "in_both": 24
+ },
+ "rows": [
+  {
+   "a_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "a_declared_alternatives_n": 2,
+   "a_live_tuple": [
+    "10000",
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+    "5bZdrGYAbHdbVCqw7RVUpxma22kJehaQCHhp4nHuHCyy"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": true,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "b_live_status": 402,
+   "b_offer_set_n": 2,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://api.bentcrypto.com/v1/token/risk",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "6007c6b73c08199a1b49f07c2b9f408a41741c7c065b6ddd8767f0a2ca5695af",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "2000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x9d6b6fdB04040a55d58B24ff4C90C08cf6083C8f"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "53476dbc62a13140a19fa38381fc532ea1151d6e8b8a1f3d8f9d87238d554755",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": false,
+   "method": "GET",
+   "resource": "https://api.eckari.com/v1/companies/us/resolve",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "c74c10c973e9f47c64c81ce12a6a94a73f17da542d67d9836c682a0bdaa5b9f2",
+   "a_declared_alternatives_n": 3,
+   "a_live_tuple": [
+    "2000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x548fC289526ab2F0391D562a723cdA64Bbf1abc4"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "c74c10c973e9f47c64c81ce12a6a94a73f17da542d67d9836c682a0bdaa5b9f2",
+   "b_live_status": 402,
+   "b_offer_set_n": 3,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 2,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://api.hyperextend.xyz/v1/candles/BTC/1m/latest",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "d0cbd2e672559fe77ba6b2fee067b7ac65eb331d6f313c7cd03dad943d55161a",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "10000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0xdCEca23FF8A7145e1b5B35427C9886CF21A67566"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "d0cbd2e672559fe77ba6b2fee067b7ac65eb331d6f313c7cd03dad943d55161a",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://api.interzoid.com/getfullnamematch",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "1000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x8a598A28a435Fe44D31854251b1c88d0781ea822"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://api.reloadpi.com/api/catalog/vouchers/brands",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "b8ac916c30e3a2120f046249254ae3861bf4768f2e5f0ff9b8a521933c8cd681",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "2000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x0D083590c048A243e24a75E3a7C968145DE25B44"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "b8ac916c30e3a2120f046249254ae3861bf4768f2e5f0ff9b8a521933c8cd681",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://base-gas-x402-production.up.railway.app/gas",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "f05a0a1895d252179d49613e286798b0960f7fa39ef59522020e48bd15a29b60",
+   "a_declared_alternatives_n": 2,
+   "a_live_tuple": [
+    "1000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x3dA40A9aD36640a2C0F533BAC368490095574664"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "f05a0a1895d252179d49613e286798b0960f7fa39ef59522020e48bd15a29b60",
+   "b_live_status": 402,
+   "b_offer_set_n": 2,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://crypto.apitoll.cloud/v1/crypto/price",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "5b47be3875bb7f0d9d8243c425cb9ec2a6c78a822548f6fc900060b9ccdff3b8",
+   "a_declared_alternatives_n": 4,
+   "a_live_tuple": [
+    "50000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x9AACeabAD8E1858b72fcEA1665381B168841b2fa"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "5b47be3875bb7f0d9d8243c425cb9ec2a6c78a822548f6fc900060b9ccdff3b8",
+   "b_live_status": 402,
+   "b_offer_set_n": 4,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://google-trends.use.x402atlas.com/trend",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "a_declared_alternatives_n": 2,
+   "a_live_tuple": [
+    "2000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0xF2A6416EBb0C594Ab2977695bED061729ddEb47b"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "b_live_status": 402,
+   "b_offer_set_n": 2,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://kaisha-api.hp-vladic.workers.dev/calendar/business-days",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "c81899aba3e7babd815aca01f793c86ca411eb1e6e583a6a89f2cf686167e99d",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "5000",
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+    "GLu63pRCYrp4BJu5P5ciYKxgeZFW9c8TJ8jWzK3TB9AR"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": true,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "c81899aba3e7babd815aca01f793c86ca411eb1e6e583a6a89f2cf686167e99d",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://madeonsol.com/api/x402/kol/feed",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "1e00f3032d09414a96dcd0481ccc0445eeb53700b2882f7c93374574a2d18ca7",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "10000",
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+    "7G73PLhKvAPBGTzG5ESAE4coE7QrVeTTKfhTxQZbyGgC"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": true,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "1e00f3032d09414a96dcd0481ccc0445eeb53700b2882f7c93374574a2d18ca7",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://mpp.hyreagent.fun/defi/tvl",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "1c0fe4b4ce32cf323f440ccd97ca607c5c5cc89b63daf3765a5519e9f8e405bf",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "1000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x058D0Cc5CC97e61e8A9f38D6d6365bce525921B2"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "1c0fe4b4ce32cf323f440ccd97ca607c5c5cc89b63daf3765a5519e9f8e405bf",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://search.cyberwarex.com/news",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "6555d3c1929e1f07e7464b25986fbec9fbebc7ba073937ef3b1d3c61fdf41564",
+   "a_declared_alternatives_n": 4,
+   "a_live_tuple": [
+    "5000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x51D577C8CBB8b3fB1BA0CE31c7923cC27a07F78B"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "6555d3c1929e1f07e7464b25986fbec9fbebc7ba073937ef3b1d3c61fdf41564",
+   "b_live_status": 402,
+   "b_offer_set_n": 4,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://twitter.use.x402atlas.com/user-details",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "2000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x38C063312719220c676E988f0DEE14B4ec0e44C8"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://vibesprings.net/api/price/btc-usd",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "a_declared_alternatives_n": 2,
+   "a_live_tuple": [
+    "2000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x23c920649F148bD253583f140f540797b312dB35"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "b_live_status": 402,
+   "b_offer_set_n": 2,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://x402-crypto-data.vercel.app/api/yields",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "7dc1ee93ac4b622611e0622f4823f9c4cf716edd6ee9a444f0645928b5763a07",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "1000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0xCc42Ed39a06b6cF3f484307eF76B88Bf56Fb305f"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "7dc1ee93ac4b622611e0622f4823f9c4cf716edd6ee9a444f0645928b5763a07",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://x402-factory.com/v1/ping",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "50000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x1f81da453901D15296c1710af83e0Bc0371D39f1"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "GET",
+   "resource": "https://x402.glassnode.com/v1/metrics/transactions/transfers_volume_exchanges_net",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "ae2e7dbb89f98a90444f277237badd5de51869ce1a08dddad30d47ebe4c8caf8",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "1000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x5f5a631e975183d084f60d7121e967b30ec83cb8"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "ae2e7dbb89f98a90444f277237badd5de51869ce1a08dddad30d47ebe4c8caf8",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "POST",
+   "resource": "https://767-2676.com/v2/receipt",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "1000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0xc2afB91833f4dE19542A025872C6085cC29185eB"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "POST",
+   "resource": "https://api.clawfetch.ai/fetch",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "00072e4b25773d8a8106abaa0de9d81db998a8bca6ca7214e6ec7d3bfde6b344",
+   "a_declared_alternatives_n": 1,
+   "a_live_tuple": [
+    "10000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x8180A3CB090815D50dE7D786fA98f4a908E70cD0"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "00072e4b25773d8a8106abaa0de9d81db998a8bca6ca7214e6ec7d3bfde6b344",
+   "b_live_status": 402,
+   "b_offer_set_n": 1,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "POST",
+   "resource": "https://api.gondola-ai.com/v1/chat/completions",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "4bc101c5a528d7e1290d0481235e83ef43be5444bdf8b632b6876b2235f5ad92",
+   "a_declared_alternatives_n": 3,
+   "a_live_tuple": [
+    "2000",
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+    "9MkM5Ra48KFcSv9HDQ8sb3C3r5HjouEwGQ6sp1cx1vde"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": true,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "4bc101c5a528d7e1290d0481235e83ef43be5444bdf8b632b6876b2235f5ad92",
+   "b_live_status": 402,
+   "b_offer_set_n": 3,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "POST",
+   "resource": "https://glim.sh/api/v1/web/fetch",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "78124a4d3c543749fc2dbae7f54be77f5a7bcfcbd76391519540d8c068ba2cd6",
+   "a_declared_alternatives_n": 6,
+   "a_live_tuple": [
+    "1000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0x9d86e0e74333b297b1d0b6ba30d2ed1b5f01f296"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "AGREE",
+   "b_body_sha256": "78124a4d3c543749fc2dbae7f54be77f5a7bcfcbd76391519540d8c068ba2cd6",
+   "b_live_status": 402,
+   "b_offer_set_n": 6,
+   "b_reason": "live_offer_set_matches_catalog",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "AGREE",
+   "body_identical": true,
+   "method": "POST",
+   "resource": "https://rpc.nodeflare.app/eth/x402",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "2f3b33a763925d043692b9b18676966804d65ce04b451ce3c34f57cd9b677acc",
+   "a_declared_alternatives_n": 2,
+   "a_live_tuple": [
+    "20000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0xaE393a9CD728F7397F50f6f8C88096a0F3D2b42C"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "DIVERGENT",
+   "b_body_sha256": "2f3b33a763925d043692b9b18676966804d65ce04b451ce3c34f57cd9b677acc",
+   "b_live_status": 402,
+   "b_offer_set_n": 2,
+   "b_reason": "no_exact_catalog_offer_set_match",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "DIVERGENT",
+   "body_identical": true,
+   "method": "POST",
+   "resource": "https://www.trezalabs.com/api/x402/speech",
+   "verdicts_agree": true
+  },
+  {
+   "a_body_sha256": "2c0de046e8b3a467e7301b6d9a97f71b22007fb67a127ba1d7e86eca6e787b36",
+   "a_declared_alternatives_n": 2,
+   "a_live_tuple": [
+    "10000",
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "eip155:8453",
+    "0xA7f3Ad0E69F61864092FAbBa6Cee00AF6e584689"
+   ],
+   "a_tuple_in_b_offer_set": true,
+   "a_tuple_match_needed_network_notation": false,
+   "a_verdict": "DIVERGENT",
+   "b_body_sha256": "2c0de046e8b3a467e7301b6d9a97f71b22007fb67a127ba1d7e86eca6e787b36",
+   "b_live_status": 402,
+   "b_offer_set_n": 2,
+   "b_reason": "no_exact_catalog_offer_set_match",
+   "b_schemes_at_a_identity": 1,
+   "b_verdict": "DIVERGENT",
+   "body_identical": true,
+   "method": "POST",
+   "resource": "https://x402.aispace.bot/api/v1/video/queue",
+   "verdicts_agree": true
+  }
+ ],
+ "summary": {
+  "a_divergent": [
+   "POST https://www.trezalabs.com/api/x402/speech",
+   "POST https://x402.aispace.bot/api/v1/video/queue"
+  ],
+  "a_live_tuple_absent_from_b_offer_set": 0,
+  "a_live_tuple_present_in_b_offer_set": 24,
+  "b_divergent": [
+   "POST https://www.trezalabs.com/api/x402/speech",
+   "POST https://x402.aispace.bot/api/v1/video/queue"
+  ],
+  "b_live_status_402": 24,
+  "b_manifest_status_counts": {
+   "200": 16,
+   "404": 7,
+   "405": 1
+  },
+  "get_rows": 17,
+  "live_body_hash_comparable": 24,
+  "live_body_hash_identical": 23,
+  "of_those_matched_only_after_network_notation": 4,
+  "post_rows": 7,
+  "rows_compared": 24,
+  "rows_where_b_sees_multiple_schemes_at_a_s_identity": 1,
+  "verdicts_agree": 24,
+  "verdicts_disagree": 0
+ }
+}

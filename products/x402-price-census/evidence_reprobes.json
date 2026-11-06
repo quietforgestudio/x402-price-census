@@ -1,0 +1,175 @@
+{
+ "note_on_excerpts": "Body excerpts are capped at a few hundred characters and exist only to NAME the field that differed. This file is evidence about third parties' public documents, not a copy of them.",
+ "produced_by": "Quietforge Studio (AI-run studio, autonomous agent)",
+ "round_1_same_length_recheck": {
+  "rows": [
+   {
+    "body": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/\",\"title\":\"Error 1042: Cloudflare Error\",\"status\":404,\"detail\":\"No Workers script was found for this host on workers.dev.\",\"instance\":\"a52ec952aea70b9d\",\"error_code\":1042,\"error_name\":\"workers_dev_script_not_found\",\"error_category\":\"worker\",\"ray_id\":\"a52ec952aea70b9d\",\"timestamp\":\"2026-10-31",
+    "bytes": 707,
+    "http": 404,
+    "origin": "https://chipscan.steveyuowoo.workers.dev",
+    "sha256": "2ce669367de61b631355e6e5182a28242b239d8c6694e1f61d204e1971418446",
+    "url": "https://chipscan.steveyuowoo.workers.dev/.well-known/x402"
+   },
+   {
+    "body": "{\"status\":\"error\",\"code\":404,\"message\":\"Application not found\",\"request_id\":\"zwNLjLWqSFmiM9S8O8poTA\"}",
+    "bytes": 101,
+    "http": 404,
+    "origin": "http://fresh-market-watch-production.up.railway.app",
+    "sha256": "ac98da55c41e86de0130b24c746fef532bd94805e40a01d624234434ff439e0a",
+    "url": "http://fresh-market-watch-production.up.railway.app/.well-known/x402"
+   },
+   {
+    "bytes": 381182,
+    "http": 200,
+    "origin": "https://mpp.hyreagent.fun",
+    "sha256": "aa7d9304d365fa559461c24dcaad59159602bc703d358cdc0e4f36d560a2cafe",
+    "url": "https://mpp.hyreagent.fun/.well-known/x402"
+   },
+   {
+    "bytes": 1858384,
+    "http": 200,
+    "origin": "https://api.gadgethumans.com",
+    "sha256": "51394331c53214bf6deda00308e8db88da15da6dd9284ec6238ac6f8240d17b9",
+    "url": "https://api.gadgethumans.com/.well-known/x402"
+   }
+  ],
+  "why": "four of the seven rows that changed bytes at an identical byte count, re-read ~15 min after window 2"
+ },
+ "round_2": {
+  "rows": [
+   {
+    "context_read_1": "ybapC8G4wEGGkZwyTDt1v\"}],\"lastUpdated\":\"2026-10-31T01:24:38.789Z\",\"metadata\":{\"method\":\"POST\",\"path\":\"/trenches/new-tokens\",\"chain\":\"solana:5eykt4UsFv8P8NJdTREp",
+    "context_read_2": "ybapC8G4wEGGkZwyTDt1v\"}],\"lastUpdated\":\"2026-10-31T01:24:38.911Z\",\"metadata\":{\"method\":\"POST\",\"path\":\"/trenches/new-tokens\",\"chain\":\"solana:5eykt4UsFv8P8NJdTREp",
+    "differing_byte_offsets": 960,
+    "first": {
+     "bytes": 381182,
+     "http": 200,
+     "read_at": "2026-10-31T01:24:38Z",
+     "sha256": "462f6cc2f69e1436e1ed7b62ab0a7d276c696c078d0718d20c0aa1b390062e32",
+     "url": "https://mpp.hyreagent.fun/.well-known/x402"
+    },
+    "first_difference_offset": 2916,
+    "hash_differs": true,
+    "origin": "https://mpp.hyreagent.fun",
+    "probe": "B_back_to_back",
+    "same_length": true,
+    "second": {
+     "bytes": 381182,
+     "http": 200,
+     "read_at": "2026-10-31T01:24:38Z",
+     "sha256": "2a35cf9472cabd17fc18a697b355e9f02ff9b72632612dc06b8f0bd421cd2a1d",
+     "url": "https://mpp.hyreagent.fun/.well-known/x402"
+    },
+    "seconds_between_reads": 0.13
+   },
+   {
+    "differing_byte_offsets": 0,
+    "first": {
+     "bytes": 1858384,
+     "http": 200,
+     "read_at": "2026-10-31T01:24:40Z",
+     "sha256": "3cf3890ee509f6697499cb9d017a0b92a07fb0a8bc0c0617604468bceb84041a",
+     "url": "https://api.gadgethumans.com/.well-known/x402"
+    },
+    "hash_differs": false,
+    "origin": "https://api.gadgethumans.com",
+    "probe": "B_back_to_back",
+    "same_length": true,
+    "second": {
+     "bytes": 1858384,
+     "http": 200,
+     "read_at": "2026-10-31T01:24:41Z",
+     "sha256": "3cf3890ee509f6697499cb9d017a0b92a07fb0a8bc0c0617604468bceb84041a",
+     "url": "https://api.gadgethumans.com/.well-known/x402"
+    },
+    "seconds_between_reads": 0.2
+   },
+   {
+    "contains_botRentalEndpoints": false,
+    "contains_botRentals": true,
+    "count_botRentals_occurrences": 1,
+    "origin": "https://saylorinnovations.com",
+    "parses": true,
+    "probe": "C_saylor_botrentals",
+    "read": {
+     "bytes": 3103207,
+     "http": 200,
+     "read_at": "2026-10-31T01:24:43Z",
+     "sha256": "b2601c171386805a492bff6d56b7bb81990b54176e8ad198054a53939e61f182",
+     "url": "https://saylorinnovations.com/.well-known/x402"
+    },
+    "top_level_keys": [
+     "agentEcosystem",
+     "botRentals",
+     "contact",
+     "description",
+     "endpoints",
+     "license",
+     "licenseSummary",
+     "liveDataEndpoints",
+     "name",
+     "openSource",
+     "payment",
+     "pricing",
+     "resources",
+     "site",
+     "updated",
+     "utilityEndpoints",
+     "x402Version"
+    ]
+   },
+   {
+    "body_head": "{\"error\": {\"code\": \"503\", \"message\": \"The deployment is currently unavailable\"}}",
+    "origin": "https://agentstoolshub.com",
+    "probe": "D_retry_5xx",
+    "read": {
+     "bytes": 80,
+     "http": 503,
+     "read_at": "2026-10-31T01:24:47Z",
+     "sha256": "4774b216305ddd09c07b88061c723b2e24bbdd81554f235bf9fa96e8703ac6e9",
+     "url": "https://agentstoolshub.com/.well-known/x402"
+    }
+   },
+   {
+    "body_head": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-522/\",\"title\":\"Error 522: Connection timed out\",\"status\":522,\"detail\":\"Cloudflare could",
+    "origin": "https://superresearch.supercapital.fun",
+    "probe": "D_retry_5xx",
+    "read": {
+     "bytes": 991,
+     "http": 522,
+     "read_at": "2026-10-31T01:24:49Z",
+     "sha256": "e2702943ed86f54b4309a9cf25e488233444009f43e8c7bafb6a1cb614dd41b1",
+     "url": "https://superresearch.supercapital.fun/.well-known/x402"
+    }
+   },
+   {
+    "body_head": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1033/\",\"title\":\"Error 1033: Cloudflare Tunnel error\",\"status\":530,\"detail\":\"The host i",
+    "origin": "https://gpt55.558686.xyz",
+    "probe": "D_retry_5xx",
+    "read": {
+     "bytes": 763,
+     "http": 530,
+     "read_at": "2026-10-31T01:24:51Z",
+     "sha256": "4c0fe2f84433da132a170384b85a556c242156c1b2927bec7715987a33b1913b",
+     "url": "https://gpt55.558686.xyz/.well-known/x402"
+    }
+   }
+  ],
+  "why": "(B) back-to-back reads of the two LARGE identical-length rows, to separate a per-request field from a short regeneration cycle; (D) one manifest-only retry of each host that newly returned 5xx, to test whether window 2's doubled request rate caused it"
+ },
+ "saylorinnovations_botrentals_recheck": {
+  "row": {
+   "all_keys_under_botRentals_sample": [],
+   "botRentals_len": 0,
+   "botRentals_type": "list",
+   "bytes": 3103207,
+   "http": 200,
+   "price_ish_keys_under_botRentals": [],
+   "read_at": "2026-10-31T01:25:37Z",
+   "sha256": "b2601c171386805a492bff6d56b7bb81990b54176e8ad198054a53939e61f182"
+  },
+  "why": "checked on the live body rather than inferred from our saved key-paths"
+ },
+ "what": "Re-probe evidence for WINDOW2_FINDINGS.md. Each row is one unauthenticated GET of a public /.well-known/x402 URL with Accept-Encoding: identity. No route priced or paid, no credential sent, nothing behind a login, nothing that writes."
+}

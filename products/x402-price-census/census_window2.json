@@ -1,0 +1,3188 @@
+{
+ "read_at": "2026-10-31T01:08:45Z",
+ "catalog": null,
+ "origins_file": "work/s545/census_hostlist.json",
+ "catalog_rows_read": null,
+ "catalog_total_declared": null,
+ "distinct_origins_in_catalog": null,
+ "probed": 100,
+ "selection": null,
+ "robots_honoured": true,
+ "method": "ONE unauthenticated GET per origin to /.well-known/x402; no route probed; no payment; Accept-Encoding: identity; 3xx followed only within the same origin and the final URL recorded",
+ "rows": [
+  {
+   "origin": "https://dev.intel.rallylive.ca",
+   "url": "https://dev.intel.rallylive.ca/.well-known/x402",
+   "http": 404,
+   "final_url": "https://dev.intel.rallylive.ca/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "rallylive.ca"
+  },
+  {
+   "origin": "https://monitor.intel.rallylive.ca",
+   "url": "https://monitor.intel.rallylive.ca/.well-known/x402",
+   "http": 404,
+   "final_url": "https://monitor.intel.rallylive.ca/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "rallylive.ca"
+  },
+  {
+   "origin": "https://data.intel.rallylive.ca",
+   "url": "https://data.intel.rallylive.ca/.well-known/x402",
+   "http": 404,
+   "final_url": "https://data.intel.rallylive.ca/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "rallylive.ca"
+  },
+  {
+   "origin": "https://ip.intel.rallylive.ca",
+   "url": "https://ip.intel.rallylive.ca/.well-known/x402",
+   "http": 404,
+   "final_url": "https://ip.intel.rallylive.ca/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "rallylive.ca"
+  },
+  {
+   "origin": "https://site.intel.rallylive.ca",
+   "url": "https://site.intel.rallylive.ca/.well-known/x402",
+   "http": 404,
+   "final_url": "https://site.intel.rallylive.ca/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "rallylive.ca"
+  },
+  {
+   "origin": "https://library.intel.rallylive.ca",
+   "url": "https://library.intel.rallylive.ca/.well-known/x402",
+   "http": 404,
+   "final_url": "https://library.intel.rallylive.ca/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "rallylive.ca"
+  },
+  {
+   "origin": "https://api.delx.ai",
+   "url": "https://api.delx.ai/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.delx.ai/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 6868644,
+   "sha256": "e275481dab84d1d23a6c51ea44ff63a115c1c6263084b64c366841b9f6d0a82b",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "agentFirst.default_paid_tool.price_usdc": [
+     "0.01"
+    ],
+    "agentFirst.fallback_tools[].price_usdc": [
+     "0.005",
+     "0.08"
+    ],
+    "resourceCatalog[].price_cents": [
+     1,
+     0.5,
+     8
+    ],
+    "resourceCatalog[].price_usdc": [
+     "0.01",
+     "0.005",
+     "0.08"
+    ],
+    "resourceCatalog[].accepts[].amount": [
+     "10000",
+     "10000",
+     "10000"
+    ],
+    "resourceCatalog[].accepts[].maxAmountRequired": [
+     "10000",
+     "10000",
+     "10000"
+    ],
+    "resourceCatalog[].extensions.bazaar.schema.properties.output.properties.example.composition_receipt.price_usdc": [
+     0.02
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.composition_receipt.price_usdc": [
+     0.02
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.observations[].price": [
+     100000.0,
+     100035.0,
+     100070.0
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.cost_usdc": [
+     "0.001"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.amount_usdc": [
+     "0.001"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.amount": [
+     250,
+     "0.001000",
+     100
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.amount": [
+     250.0,
+     100.0,
+     1.25
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.fills[].price": [
+     10,
+     12
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.amount": [
+     "0.001000"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.price": [
+     0.25,
+     100,
+     2500
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.price": [
+     0.25,
+     100.0,
+     2500.0
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.cost": [
+     50.0,
+     35.0,
+     0.002
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.fee": [
+     0.5
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.cost_wei": [
+     "21000000000000",
+     "21000000000000"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.cost_usd": [
+     0.063
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.cost": [
+     35,
+     0.002,
+     50
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.payload.amount": [
+     10
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.object.amount": [
+     10
+    ],
+    "resourceCatalog[].extensions.bazaar.schema.properties.output.properties.example.result.ledger_instruction.amount": [
+     158
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.ledger_instruction.amount": [
+     158
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.levels[].price": [
+     100.0,
+     99.5
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.price_usdc": [
+     0.01
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.price_usdc": [
+     0.01
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.purchase.amount_usdc": [
+     0.01
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.samples[].price": [
+     10,
+     12
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.accepts[].amount": [
+     "1000",
+     "1000"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.ranked[].amount": [
+     "1000",
+     "1000"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.selected.amount": [
+     "1000"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.route.price_usdc": [
+     "0.001"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.challenge.accepts[].amount": [
+     "1000"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.payment_requirement.amount": [
+     "5000"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.payment_response.amount": [
+     "5000"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.delivery_receipt.amount": [
+     "5000"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.settlement_ref.amount": [
+     "5000"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.requirements.accepts[].amount": [
+     "1000"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.input.body.max_amount_usdc": [
+     0.002
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.selected.amount_usdc": [
+     "0.001"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.evaluations[].amount_usdc": [
+     "0.001"
+    ],
+    "resourceCatalog[].extensions.bazaar.info.output.example.policy.max_amount_usdc": [
+     "0.002"
+    ]
+   },
+   "loose_only_surfaces": [
+    "agentFirst.default_paid_tool.sample_response.sale_price_usdc",
+    "agentFirst.free_preview.sample_response.sale_price_usdc",
+    "agentFirst.reward_follow_up.competitive_playbook.safety.no_price_promise",
+    "agentFirst.reward_follow_up.epoch_hygiene.safety.no_price_promise",
+    "agentFirst.reward_follow_up.expansion_readiness.launch_readiness.safety.no_price_promise",
+    "agentFirst.reward_follow_up.expansion_readiness.safety.no_price_promise",
+    "agentFirst.reward_follow_up.launch_readiness.safety.no_price_promise",
+    "agentFirst.reward_follow_up.safety.no_price_promise",
+    "agentFirst.reward_follow_up.season.safety.no_price_promise",
+    "agentFirst.reward_follow_up.utility.safety.no_price_promise",
+    "policy.provider_registry.payai.accepts[].extra.feePayer",
+    "resourceCatalog[].accepts[].extra.feePayer",
+    "resourceCatalog[].extensions.bazaar.info.input.body.amount_in",
+    "resourceCatalog[].extensions.bazaar.info.input.body.amount_raw",
+    "resourceCatalog[].extensions.bazaar.info.input.body.base_fee_wei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.bridge_fee_usd",
+    "resourceCatalog[].extensions.bazaar.info.input.body.current_base_fee_wei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.expected_amount_raw",
+    "resourceCatalog[].extensions.bazaar.info.input.body.fee_bps",
+    "resourceCatalog[].extensions.bazaar.info.input.body.fee_ceiling_wei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.fee_rate",
+    "resourceCatalog[].extensions.bazaar.info.input.body.fields.maxFeePerGas",
+    "resourceCatalog[].extensions.bazaar.info.input.body.fields.maxPriorityFeePerGas",
+    "resourceCatalog[].extensions.bazaar.info.input.body.fixed_cost",
+    "resourceCatalog[].extensions.bazaar.info.input.body.gas_price_gwei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.gas_price_wei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.market_down_price",
+    "resourceCatalog[].extensions.bazaar.info.input.body.market_price",
+    "resourceCatalog[].extensions.bazaar.info.input.body.market_up_price",
+    "resourceCatalog[].extensions.bazaar.info.input.body.max_fee_per_blob_gas_wei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.max_fee_per_gas_wei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.max_priority_fee_per_gas_wei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.maximum_fee_wei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.new_fee_wei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.object.expected_amount",
+    "resourceCatalog[].extensions.bazaar.info.input.body.old_fee_wei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.price_ratio",
+    "resourceCatalog[].extensions.bazaar.info.input.body.priority_fee_wei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.purchase_amount",
+    "resourceCatalog[].extensions.bazaar.info.input.body.receipt.amount_raw",
+    "resourceCatalog[].extensions.bazaar.info.input.body.total_cost",
+    "resourceCatalog[].extensions.bazaar.info.input.body.transactions[].max_fee_per_gas_wei",
+    "resourceCatalog[].extensions.bazaar.info.input.body.window_open_price",
+    "resourceCatalog[].extensions.bazaar.info.output.example.amount_in",
+    "resourceCatalog[].extensions.bazaar.info.output.example.amount_out",
+    "resourceCatalog[].extensions.bazaar.info.output.example.components.bridge_fee_usd",
+    "resourceCatalog[].extensions.bazaar.info.output.example.composition_receipt.legs[].upstream_cost_usd",
+    "resourceCatalog[].extensions.bazaar.info.output.example.cost_eth",
+    "resourceCatalog[].extensions.bazaar.info.output.example.cost_per_success",
+    "resourceCatalog[].extensions.bazaar.info.output.example.estimated_fee_eth",
+    "resourceCatalog[].extensions.bazaar.info.output.example.estimated_fee_usd",
+    "resourceCatalog[].extensions.bazaar.info.output.example.estimated_fee_wei",
+    "resourceCatalog[].extensions.bazaar.info.output.example.fair_price",
+    "resourceCatalog[].extensions.bazaar.info.output.example.fee_bps",
+    "resourceCatalog[].extensions.bazaar.info.output.example.fee_fraction_needed",
+    "resourceCatalog[].extensions.bazaar.info.output.example.fee_rate",
+    "resourceCatalog[].extensions.bazaar.info.output.example.fees",
+    "resourceCatalog[].extensions.bazaar.info.output.example.fixed_cost",
+    "resourceCatalog[].extensions.bazaar.info.output.example.gas_price_wei",
+    "resourceCatalog[].extensions.bazaar.info.output.example.impact_price",
+    "resourceCatalog[].extensions.bazaar.info.output.example.liq_price",
+    "resourceCatalog[].extensions.bazaar.info.output.example.maker_fee",
+    "resourceCatalog[].extensions.bazaar.info.output.example.market_price",
+    "resourceCatalog[].extensions.bazaar.info.output.example.minimum_price",
+    "resourceCatalog[].extensions.bazaar.info.output.example.no_price",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.amount_match",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.amount_raw",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.blob_fee_ceiling_wei",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.checks.positive_price",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.effective_fee_per_gas_wei",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.fee_caps_ordered",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.fee_ceiling_wei",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.feed_count",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.has_feed",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.max_fee_per_gas_wei",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.max_priority_fee_per_gas_wei",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.priority_fee_ceiling_wei",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.proposed_fee_wei",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.purchase_amount",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.receipt.amount_raw",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.required_fee_wei",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.summary.has_feeds",
+    "resourceCatalog[].extensions.bazaar.info.output.example.revalued_amount",
+    "resourceCatalog[].extensions.bazaar.info.output.example.sale_price_usdc",
+    "resourceCatalog[].extensions.bazaar.info.output.example.steps[].liq_price_long_approx",
+    "resourceCatalog[].extensions.bazaar.info.output.example.taker_fee",
+    "resourceCatalog[].extensions.bazaar.info.output.example.total_cost",
+    "resourceCatalog[].extensions.bazaar.info.output.example.upstream_cost_usd",
+    "resourceCatalog[].extensions.bazaar.schema.properties.output.properties.example.composition_receipt.legs[].upstream_cost_usd",
+    "resourceCatalog[].extensions.bazaar.schema.properties.output.properties.example.result.feed_count",
+    "resourceCatalog[].extensions.bazaar.schema.properties.output.properties.example.result.has_feed",
+    "resourceCatalog[].extensions.bazaar.schema.properties.output.properties.example.result.purchase_amount",
+    "resourceCatalog[].extensions.bazaar.schema.properties.output.properties.example.result.summary.has_feeds",
+    "resourceCatalog[].extensions.bazaar.schema.properties.output.properties.example.sale_price_usdc",
+    "resourceCatalog[].extensions.bazaar.schema.properties.output.properties.example.upstream_cost_usd",
+    "resourceCatalog[].price_microunits",
+    "rewards.competitive_playbook.safety.no_price_promise",
+    "rewards.epoch_hygiene.safety.no_price_promise",
+    "rewards.expansion_readiness.launch_readiness.safety.no_price_promise",
+    "rewards.expansion_readiness.safety.no_price_promise",
+    "rewards.launch_readiness.safety.no_price_promise",
+    "rewards.safety.no_price_promise",
+    "rewards.season.safety.no_price_promise",
+    "rewards.token_info.competitive_playbook.safety.no_price_promise",
+    "rewards.token_info.epoch_hygiene.safety.no_price_promise",
+    "rewards.token_info.expansion_readiness.launch_readiness.safety.no_price_promise",
+    "rewards.token_info.expansion_readiness.safety.no_price_promise",
+    "rewards.token_info.launch_readiness.safety.no_price_promise",
+    "rewards.token_info.market_status.launch_readiness.safety.no_price_promise",
+    "rewards.token_info.market_status.no_price_promise",
+    "rewards.token_info.safety.no_price_promise",
+    "rewards.token_info.season.safety.no_price_promise",
+    "rewards.token_info.utility.safety.no_price_promise",
+    "rewards.utility.safety.no_price_promise"
+   ],
+   "normative_surfaces": [
+    "resourceCatalog[].accepts[].amount",
+    "resourceCatalog[].accepts[].maxAmountRequired",
+    "resourceCatalog[].extensions.bazaar.info.input.body.accepts[].amount",
+    "resourceCatalog[].extensions.bazaar.info.input.body.amount",
+    "resourceCatalog[].extensions.bazaar.info.input.body.challenge.accepts[].amount",
+    "resourceCatalog[].extensions.bazaar.info.input.body.delivery_receipt.amount",
+    "resourceCatalog[].extensions.bazaar.info.input.body.object.amount",
+    "resourceCatalog[].extensions.bazaar.info.input.body.payload.amount",
+    "resourceCatalog[].extensions.bazaar.info.input.body.payment_requirement.amount",
+    "resourceCatalog[].extensions.bazaar.info.input.body.payment_response.amount",
+    "resourceCatalog[].extensions.bazaar.info.input.body.requirements.accepts[].amount",
+    "resourceCatalog[].extensions.bazaar.info.input.body.settlement_ref.amount",
+    "resourceCatalog[].extensions.bazaar.info.output.example.amount",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.amount",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.ledger_instruction.amount",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.ranked[].amount",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.selected.amount",
+    "resourceCatalog[].extensions.bazaar.schema.properties.output.properties.example.result.ledger_instruction.amount"
+   ],
+   "label_surfaces": [
+    "agentFirst.default_paid_tool.price_usdc",
+    "agentFirst.fallback_tools[].price_usdc",
+    "resourceCatalog[].extensions.bazaar.info.input.body.cost",
+    "resourceCatalog[].extensions.bazaar.info.input.body.cost_usdc",
+    "resourceCatalog[].extensions.bazaar.info.input.body.fills[].price",
+    "resourceCatalog[].extensions.bazaar.info.input.body.levels[].price",
+    "resourceCatalog[].extensions.bazaar.info.input.body.max_amount_usdc",
+    "resourceCatalog[].extensions.bazaar.info.input.body.observations[].price",
+    "resourceCatalog[].extensions.bazaar.info.input.body.price",
+    "resourceCatalog[].extensions.bazaar.info.input.body.price_usdc",
+    "resourceCatalog[].extensions.bazaar.info.input.body.purchase.amount_usdc",
+    "resourceCatalog[].extensions.bazaar.info.input.body.route.price_usdc",
+    "resourceCatalog[].extensions.bazaar.info.input.body.samples[].price",
+    "resourceCatalog[].extensions.bazaar.info.output.example.composition_receipt.price_usdc",
+    "resourceCatalog[].extensions.bazaar.info.output.example.cost",
+    "resourceCatalog[].extensions.bazaar.info.output.example.cost_usd",
+    "resourceCatalog[].extensions.bazaar.info.output.example.cost_wei",
+    "resourceCatalog[].extensions.bazaar.info.output.example.evaluations[].amount_usdc",
+    "resourceCatalog[].extensions.bazaar.info.output.example.fee",
+    "resourceCatalog[].extensions.bazaar.info.output.example.policy.max_amount_usdc",
+    "resourceCatalog[].extensions.bazaar.info.output.example.price",
+    "resourceCatalog[].extensions.bazaar.info.output.example.price_usdc",
+    "resourceCatalog[].extensions.bazaar.info.output.example.result.amount_usdc",
+    "resourceCatalog[].extensions.bazaar.info.output.example.selected.amount_usdc",
+    "resourceCatalog[].extensions.bazaar.schema.properties.output.properties.example.composition_receipt.price_usdc",
+    "resourceCatalog[].price_cents",
+    "resourceCatalog[].price_usdc"
+   ],
+   "bare_string_resources": 986,
+   "resources_len": 986,
+   "catalog_rows": null,
+   "registrable": "delx.ai"
+  },
+  {
+   "origin": "https://page.intel.rallylive.ca",
+   "url": "https://page.intel.rallylive.ca/.well-known/x402",
+   "http": 404,
+   "final_url": "https://page.intel.rallylive.ca/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "rallylive.ca"
+  },
+  {
+   "origin": "https://dns.intel.rallylive.ca",
+   "url": "https://dns.intel.rallylive.ca/.well-known/x402",
+   "http": 404,
+   "final_url": "https://dns.intel.rallylive.ca/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "rallylive.ca"
+  },
+  {
+   "origin": "https://email.intel.rallylive.ca",
+   "url": "https://email.intel.rallylive.ca/.well-known/x402",
+   "http": 404,
+   "final_url": "https://email.intel.rallylive.ca/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "rallylive.ca"
+  },
+  {
+   "origin": "https://saylorinnovations.com",
+   "url": "https://saylorinnovations.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://saylorinnovations.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 3103207,
+   "sha256": "b2601c171386805a492bff6d56b7bb81990b54176e8ad198054a53939e61f182",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "endpoints.discovery.price": [
+     "free"
+    ],
+    "endpoints.search.price": [
+     "free"
+    ],
+    "endpoints.openapi.price": [
+     "free"
+    ],
+    "endpoints.catalog.price": [
+     "free"
+    ],
+    "endpoints.resource.price": [
+     "per-article, see accepts"
+    ],
+    "liveDataEndpoints[].price": [
+     "10000",
+     "10000",
+     "10000"
+    ],
+    "liveDataEndpoints[].priceUsd": [
+     0.01,
+     0.01,
+     0.01
+    ],
+    "liveDataEndpoints[].accepts[].amount": [
+     "10000",
+     "10000",
+     "10000"
+    ],
+    "utilityEndpoints[].price": [
+     "10000",
+     "10000",
+     "10000"
+    ],
+    "utilityEndpoints[].priceUsd": [
+     0.01,
+     0.01,
+     0.01
+    ],
+    "utilityEndpoints[].accepts[].amount": [
+     "10000",
+     "10000",
+     "10000"
+    ],
+    "utilityEndpoints[].example.report.amount": [
+     1
+    ],
+    "resources[].price": [
+     "free",
+     "10000",
+     "10000"
+    ],
+    "resources[].accepts[].amount": [
+     "10000",
+     "10000",
+     "10000"
+    ],
+    "resources[].priceUsd": [
+     0.01,
+     0.01,
+     0.01
+    ]
+   },
+   "loose_only_surfaces": [
+    "liveDataEndpoints[].unitAmount"
+   ],
+   "normative_surfaces": [
+    "liveDataEndpoints[].accepts[].amount",
+    "resources[].accepts[].amount",
+    "utilityEndpoints[].accepts[].amount",
+    "utilityEndpoints[].example.report.amount"
+   ],
+   "label_surfaces": [
+    "endpoints.catalog.price",
+    "endpoints.discovery.price",
+    "endpoints.openapi.price",
+    "endpoints.resource.price",
+    "endpoints.search.price",
+    "liveDataEndpoints[].price",
+    "liveDataEndpoints[].priceUsd",
+    "resources[].price",
+    "resources[].priceUsd",
+    "utilityEndpoints[].price",
+    "utilityEndpoints[].priceUsd"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 129,
+   "catalog_rows": null,
+   "registrable": "saylorinnovations.com"
+  },
+  {
+   "origin": "https://intel.rallylive.ca",
+   "url": "https://intel.rallylive.ca/.well-known/x402",
+   "http": 404,
+   "final_url": "https://intel.rallylive.ca/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "rallylive.ca"
+  },
+  {
+   "origin": "https://agent402.tools",
+   "url": "https://agent402.tools/.well-known/x402",
+   "http": 200,
+   "final_url": "https://agent402.tools/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 56677,
+   "sha256": "614b7c7673a8ea31f7f7721e7e2939819a4ed12ab01ba986ccd3e93c5ac21d3e",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [
+    "capabilities.categories[].priceRange",
+    "payment.x402.priceRange"
+   ],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 624,
+   "resources_len": 624,
+   "catalog_rows": null,
+   "registrable": "agent402.tools"
+  },
+  {
+   "origin": "https://api.x402node.dev",
+   "url": "https://api.x402node.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.x402node.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 25708,
+   "sha256": "076636297ef1ff9cb34ee0c4bc1cd2794c98214cac6aa4ae9d55abe99dc05094",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 543,
+   "resources_len": 543,
+   "catalog_rows": null,
+   "registrable": "x402node.dev"
+  },
+  {
+   "origin": "https://payai.agentstools.dev",
+   "url": "https://payai.agentstools.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://payai.agentstools.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 1022002,
+   "sha256": "3a4966f04fd1b83eed8b8462e6f146506a5cdeed3dd2120f2cc62e552204dc7a",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "services[].price": [
+     "$0.002",
+     "$0.003",
+     "$0.003"
+    ],
+    "services[].output_example.price_usd": [
+     1706.69,
+     0.4,
+     0.4
+    ],
+    "services[].outputSchema.output.example.price_usd": [
+     1706.69,
+     0.4,
+     0.4
+    ],
+    "services[].output_example.movements[].assets[].amount": [
+     -100.0,
+     0.0312
+    ],
+    "services[].output_example.gas.fee_usd": [
+     0.05
+    ],
+    "services[].outputSchema.output.example.movements[].assets[].amount": [
+     -100.0,
+     0.0312
+    ],
+    "services[].outputSchema.output.example.gas.fee_usd": [
+     0.05
+    ],
+    "services[].output_example.swaps[].price": [
+     1721.54
+    ],
+    "services[].outputSchema.output.example.swaps[].price": [
+     1721.54
+    ],
+    "services[].output_example.serving_size.amount": [
+     28.0
+    ],
+    "services[].outputSchema.output.example.serving_size.amount": [
+     28.0
+    ],
+    "services[].output_example.awards[].amount": [
+     16416.33,
+     1998750.0
+    ],
+    "services[].outputSchema.output.example.awards[].amount": [
+     16416.33,
+     1998750.0
+    ],
+    "services[].output_example.top_agencies[].amount": [
+     50837516929.93
+    ],
+    "services[].outputSchema.output.example.top_agencies[].amount": [
+     50837516929.93
+    ],
+    "services[].output_example.top_vendors[].amount": [
+     2175598667.68
+    ],
+    "services[].outputSchema.output.example.top_vendors[].amount": [
+     2175598667.68
+    ],
+    "services[].output_example.price": [
+     10.4506
+    ],
+    "services[].outputSchema.output.example.price": [
+     10.4506
+    ],
+    "services[].output_example.option.price": [
+     10.46
+    ],
+    "services[].outputSchema.output.example.option.price": [
+     10.46
+    ],
+    "services[].output_example.signals.spot_price.price": [
+     4.18
+    ],
+    "services[].outputSchema.output.example.signals.spot_price.price": [
+     4.18
+    ],
+    "services[].input.body.typed_data.message.details.amount": [
+     "1461501637330902918203684832716283019655932542975"
+    ],
+    "services[].outputSchema.input.body.typed_data.message.details.amount": [
+     "1461501637330902918203684832716283019655932542975"
+    ],
+    "services[].output_example.decoded.args.amount": [
+     "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+    ],
+    "services[].outputSchema.output.example.decoded.args.amount": [
+     "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+    ],
+    "services[].output_example.token_balances.HNT.amount": [
+     12.5
+    ],
+    "services[].outputSchema.output.example.token_balances.HNT.amount": [
+     12.5
+    ],
+    "services[].input.queryParams.min_amount": [
+     200
+    ],
+    "services[].output_example.contributions[].amount": [
+     500.0
+    ],
+    "services[].outputSchema.input.queryParams.min_amount": [
+     200
+    ],
+    "services[].outputSchema.output.example.contributions[].amount": [
+     500.0
+    ],
+    "services[].output_example.spend.spend_by_year[].amount": [
+     6000000.0,
+     6000000.0
+    ],
+    "services[].outputSchema.output.example.spend.spend_by_year[].amount": [
+     6000000.0,
+     6000000.0
+    ],
+    "services[].output_example.trades[].price": [
+     0.967
+    ],
+    "services[].output_example.summary.min_price": [
+     0.967,
+     0.91
+    ],
+    "services[].output_example.summary.max_price": [
+     0.967,
+     0.9565
+    ],
+    "services[].outputSchema.output.example.trades[].price": [
+     0.967
+    ],
+    "services[].outputSchema.output.example.summary.min_price": [
+     0.967,
+     0.91
+    ],
+    "services[].outputSchema.output.example.summary.max_price": [
+     0.967,
+     0.9565
+    ],
+    "services[].output_example.stablecoins[].price": [
+     0.9998
+    ],
+    "services[].outputSchema.output.example.stablecoins[].price": [
+     0.9998
+    ],
+    "services[].output_example.peg.price": [
+     0.9998,
+     1.0003
+    ],
+    "services[].outputSchema.output.example.peg.price": [
+     0.9998,
+     1.0003
+    ],
+    "services[].output_example.results[].price_usd": [
+     0.4
+    ],
+    "services[].outputSchema.output.example.results[].price_usd": [
+     0.4
+    ],
+    "services[].output_example.results[].amount": [
+     1998750.0
+    ],
+    "services[].outputSchema.output.example.results[].amount": [
+     1998750.0
+    ],
+    "services[].output_example.award.amount": [
+     1998750.0
+    ],
+    "services[].outputSchema.output.example.award.amount": [
+     1998750.0
+    ],
+    "services[].output_example.history[].amount_usd": [
+     326000000.0
+    ],
+    "services[].outputSchema.output.example.history[].amount_usd": [
+     326000000.0
+    ],
+    "services[].input.queryParams.amount": [
+     "1000000000",
+     "1000000"
+    ],
+    "services[].outputSchema.input.queryParams.amount": [
+     "1000000000",
+     "1000000"
+    ],
+    "services[].output_example.statements.income[].periods[].amount": [
+     258935494000000,
+     302231360000000
+    ],
+    "services[].outputSchema.output.example.statements.income[].periods[].amount": [
+     258935494000000,
+     302231360000000
+    ]
+   },
+   "loose_only_surfaces": [
+    "services[].input.queryParams.amountIn",
+    "services[].input.queryParams.max_output_price",
+    "services[].outputSchema.input.queryParams.amountIn",
+    "services[].outputSchema.input.queryParams.max_output_price",
+    "services[].outputSchema.output.example.agency.obligated_amount",
+    "services[].outputSchema.output.example.amountInterpretation",
+    "services[].outputSchema.output.example.approval.amountRaw",
+    "services[].outputSchema.output.example.base_fee_gwei",
+    "services[].outputSchema.output.example.base_fee_wei",
+    "services[].outputSchema.output.example.best_pool.apy_base_fees",
+    "services[].outputSchema.output.example.best_pool.fee_pct",
+    "services[].outputSchema.output.example.best_pool.fees_24h_usd",
+    "services[].outputSchema.output.example.breakdown[].monthly_cost",
+    "services[].outputSchema.output.example.breakdown[].priced",
+    "services[].outputSchema.output.example.breakdown[].unit_price",
+    "services[].outputSchema.output.example.breakeven.breakeven_btc_price_usd",
+    "services[].outputSchema.output.example.breakeven.power_cost_usd_day",
+    "services[].outputSchema.output.example.by_reward_type.service_provider_reward.total_amount",
+    "services[].outputSchema.output.example.coverage.priced",
+    "services[].outputSchema.output.example.coverage.unpriced",
+    "services[].outputSchema.output.example.derivatives.price_to_income",
+    "services[].outputSchema.output.example.fee_histogram[].fee_rate_sat_vb",
+    "services[].outputSchema.output.example.fee_rate_sat_vb",
+    "services[].outputSchema.output.example.fee_sat",
+    "services[].outputSchema.output.example.filings[].transactions[].pricePerShare",
+    "services[].outputSchema.output.example.gas.fee_native",
+    "services[].outputSchema.output.example.gas_price_gwei",
+    "services[].outputSchema.output.example.gas_price_wei",
+    "services[].outputSchema.output.example.hashprice.hashprice_btc_per_ph_day",
+    "services[].outputSchema.output.example.hashprice.hashprice_usd_per_th_day",
+    "services[].outputSchema.output.example.independent_expenditures.total_amount",
+    "services[].outputSchema.output.example.landed_cost.estimated_landed_cost",
+    "services[].outputSchema.output.example.mempool_total_fee_sat",
+    "services[].outputSchema.output.example.models[].price_in",
+    "services[].outputSchema.output.example.models[].price_out",
+    "services[].outputSchema.output.example.movements[].assets[].amount_raw",
+    "services[].outputSchema.output.example.open_positions[].avg_price",
+    "services[].outputSchema.output.example.open_positions[].cur_price",
+    "services[].outputSchema.output.example.price_in",
+    "services[].outputSchema.output.example.price_out",
+    "services[].outputSchema.output.example.quote.buyAmountMinRaw",
+    "services[].outputSchema.output.example.quote.buyAmountRaw",
+    "services[].outputSchema.output.example.quote.priceImpactPct",
+    "services[].outputSchema.output.example.quote.route.feeTier",
+    "services[].outputSchema.output.example.quote.venuesCompared[].buyAmountRaw",
+    "services[].outputSchema.output.example.recommended.price_in",
+    "services[].outputSchema.output.example.recommended.price_out",
+    "services[].outputSchema.output.example.reference_price_usd",
+    "services[].outputSchema.output.example.sales_feed_available",
+    "services[].outputSchema.output.example.sellAmountRaw",
+    "services[].outputSchema.output.example.signals.spot_price.price_percentile",
+    "services[].outputSchema.output.example.sources.news_feeds_ok",
+    "services[].outputSchema.output.example.summary.current_price",
+    "services[].outputSchema.output.example.summary.end_price",
+    "services[].outputSchema.output.example.summary.last_price",
+    "services[].outputSchema.output.example.summary.start_price",
+    "services[].outputSchema.output.example.summary.total_amount",
+    "services[].outputSchema.output.example.swaps[].amount_base",
+    "services[].outputSchema.output.example.swaps[].amount_quote",
+    "services[].outputSchema.output.example.tiers.fast.max_fee_gwei",
+    "services[].outputSchema.output.example.tiers.med.max_fee_gwei",
+    "services[].outputSchema.output.example.tiers.slow.max_fee_gwei",
+    "services[].outputSchema.output.example.total_federal_amount",
+    "services[].outputSchema.output.example.trades[].amount_high",
+    "services[].outputSchema.output.example.trades[].amount_low",
+    "services[].outputSchema.output.example.trades[].amount_range",
+    "services[].output_example.agency.obligated_amount",
+    "services[].output_example.amountInterpretation",
+    "services[].output_example.approval.amountRaw",
+    "services[].output_example.base_fee_gwei",
+    "services[].output_example.base_fee_wei",
+    "services[].output_example.best_pool.apy_base_fees",
+    "services[].output_example.best_pool.fee_pct",
+    "services[].output_example.best_pool.fees_24h_usd",
+    "services[].output_example.breakdown[].monthly_cost",
+    "services[].output_example.breakdown[].priced",
+    "services[].output_example.breakdown[].unit_price",
+    "services[].output_example.breakeven.breakeven_btc_price_usd",
+    "services[].output_example.breakeven.power_cost_usd_day",
+    "services[].output_example.by_reward_type.service_provider_reward.total_amount",
+    "services[].output_example.coverage.priced",
+    "services[].output_example.coverage.unpriced",
+    "services[].output_example.derivatives.price_to_income",
+    "services[].output_example.fee_histogram[].fee_rate_sat_vb",
+    "services[].output_example.fee_rate_sat_vb",
+    "services[].output_example.fee_sat",
+    "services[].output_example.filings[].transactions[].pricePerShare",
+    "services[].output_example.gas.fee_native",
+    "services[].output_example.gas_price_gwei",
+    "services[].output_example.gas_price_wei",
+    "services[].output_example.hashprice.hashprice_btc_per_ph_day",
+    "services[].output_example.hashprice.hashprice_usd_per_th_day",
+    "services[].output_example.independent_expenditures.total_amount",
+    "services[].output_example.landed_cost.estimated_landed_cost",
+    "services[].output_example.mempool_total_fee_sat",
+    "services[].output_example.models[].price_in",
+    "services[].output_example.models[].price_out",
+    "services[].output_example.movements[].assets[].amount_raw",
+    "services[].output_example.open_positions[].avg_price",
+    "services[].output_example.open_positions[].cur_price",
+    "services[].output_example.price_in",
+    "services[].output_example.price_out",
+    "services[].output_example.quote.buyAmountMinRaw",
+    "services[].output_example.quote.buyAmountRaw",
+    "services[].output_example.quote.priceImpactPct",
+    "services[].output_example.quote.route.feeTier",
+    "services[].output_example.quote.venuesCompared[].buyAmountRaw",
+    "services[].output_example.recommended.price_in",
+    "services[].output_example.recommended.price_out",
+    "services[].output_example.reference_price_usd",
+    "services[].output_example.sales_feed_available",
+    "services[].output_example.sellAmountRaw",
+    "services[].output_example.signals.spot_price.price_percentile",
+    "services[].output_example.sources.news_feeds_ok",
+    "services[].output_example.summary.current_price",
+    "services[].output_example.summary.end_price",
+    "services[].output_example.summary.last_price",
+    "services[].output_example.summary.start_price",
+    "services[].output_example.summary.total_amount",
+    "services[].output_example.swaps[].amount_base",
+    "services[].output_example.swaps[].amount_quote",
+    "services[].output_example.tiers.fast.max_fee_gwei",
+    "services[].output_example.tiers.med.max_fee_gwei",
+    "services[].output_example.tiers.slow.max_fee_gwei",
+    "services[].output_example.total_federal_amount",
+    "services[].output_example.trades[].amount_high",
+    "services[].output_example.trades[].amount_low",
+    "services[].output_example.trades[].amount_range"
+   ],
+   "normative_surfaces": [
+    "services[].input.body.typed_data.message.details.amount",
+    "services[].input.queryParams.amount",
+    "services[].outputSchema.input.body.typed_data.message.details.amount",
+    "services[].outputSchema.input.queryParams.amount",
+    "services[].outputSchema.output.example.award.amount",
+    "services[].outputSchema.output.example.awards[].amount",
+    "services[].outputSchema.output.example.contributions[].amount",
+    "services[].outputSchema.output.example.decoded.args.amount",
+    "services[].outputSchema.output.example.movements[].assets[].amount",
+    "services[].outputSchema.output.example.results[].amount",
+    "services[].outputSchema.output.example.serving_size.amount",
+    "services[].outputSchema.output.example.spend.spend_by_year[].amount",
+    "services[].outputSchema.output.example.statements.income[].periods[].amount",
+    "services[].outputSchema.output.example.token_balances.HNT.amount",
+    "services[].outputSchema.output.example.top_agencies[].amount",
+    "services[].outputSchema.output.example.top_vendors[].amount",
+    "services[].output_example.award.amount",
+    "services[].output_example.awards[].amount",
+    "services[].output_example.contributions[].amount",
+    "services[].output_example.decoded.args.amount",
+    "services[].output_example.movements[].assets[].amount",
+    "services[].output_example.results[].amount",
+    "services[].output_example.serving_size.amount",
+    "services[].output_example.spend.spend_by_year[].amount",
+    "services[].output_example.statements.income[].periods[].amount",
+    "services[].output_example.token_balances.HNT.amount",
+    "services[].output_example.top_agencies[].amount",
+    "services[].output_example.top_vendors[].amount"
+   ],
+   "label_surfaces": [
+    "services[].input.queryParams.min_amount",
+    "services[].outputSchema.input.queryParams.min_amount",
+    "services[].outputSchema.output.example.gas.fee_usd",
+    "services[].outputSchema.output.example.history[].amount_usd",
+    "services[].outputSchema.output.example.option.price",
+    "services[].outputSchema.output.example.peg.price",
+    "services[].outputSchema.output.example.price",
+    "services[].outputSchema.output.example.price_usd",
+    "services[].outputSchema.output.example.results[].price_usd",
+    "services[].outputSchema.output.example.signals.spot_price.price",
+    "services[].outputSchema.output.example.stablecoins[].price",
+    "services[].outputSchema.output.example.summary.max_price",
+    "services[].outputSchema.output.example.summary.min_price",
+    "services[].outputSchema.output.example.swaps[].price",
+    "services[].outputSchema.output.example.trades[].price",
+    "services[].output_example.gas.fee_usd",
+    "services[].output_example.history[].amount_usd",
+    "services[].output_example.option.price",
+    "services[].output_example.peg.price",
+    "services[].output_example.price",
+    "services[].output_example.price_usd",
+    "services[].output_example.results[].price_usd",
+    "services[].output_example.signals.spot_price.price",
+    "services[].output_example.stablecoins[].price",
+    "services[].output_example.summary.max_price",
+    "services[].output_example.summary.min_price",
+    "services[].output_example.swaps[].price",
+    "services[].output_example.trades[].price",
+    "services[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 362,
+   "catalog_rows": null,
+   "registrable": "agentstools.dev"
+  },
+  {
+   "origin": "http://x402.asrai.me",
+   "url": "http://x402.asrai.me/.well-known/x402",
+   "http": 404,
+   "final_url": "https://x402.asrai.me/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 22,
+   "sha256": "37ec4665a8102d115ffd1ac20dae94c98b4dac64b0c1a68228aa2a531caeb35d",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "asrai.me"
+  },
+  {
+   "origin": "https://www.cloudworldmodel.ai",
+   "url": "https://www.cloudworldmodel.ai/.well-known/x402",
+   "http": 200,
+   "final_url": "https://www.cloudworldmodel.ai/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 4152,
+   "sha256": "569419f9f37df75ea91fc0455c91384c0af55f4da43227aebc3176733a3ad216",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [
+    "paymentOptions[].feePayer",
+    "solana.feePayer"
+   ],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 48,
+   "resources_len": 48,
+   "catalog_rows": null,
+   "registrable": "cloudworldmodel.ai"
+  },
+  {
+   "origin": "https://agents.daedalusdevelopmentgroup.com",
+   "url": "https://agents.daedalusdevelopmentgroup.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://agents.daedalusdevelopmentgroup.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 871435,
+   "sha256": "b0cede44bb5ad3b5ff6988fddd0329eeb3da2e5572cb395b8d5e99210076c4f3",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "resources[].amount": [
+     "10000",
+     "10000",
+     "10000"
+    ],
+    "resources[].maxAmountRequired": [
+     "10000",
+     "10000",
+     "10000"
+    ]
+   },
+   "loose_only_surfaces": [
+    "payment_protocols.x402_settlement_proof.amount_atomic",
+    "resources[].extensions.bazaar.info.input.body.advertised_price_usd",
+    "resources[].extensions.bazaar.info.input.body.cap_amount",
+    "resources[].extensions.bazaar.info.input.body.price_per_call_usd",
+    "resources[].extensions.bazaar.info.input.body.settled_amount",
+    "resources[].price_human"
+   ],
+   "normative_surfaces": [
+    "resources[].amount",
+    "resources[].maxAmountRequired"
+   ],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 278,
+   "catalog_rows": null,
+   "registrable": "daedalusdevelopmentgroup.com"
+  },
+  {
+   "origin": "https://tanod.dev",
+   "url": "https://tanod.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://tanod.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 15711,
+   "sha256": "86a0cbe2ee8320dea45232dea7488d96afa8be672f50293ebe983a671cf34c9f",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 310,
+   "resources_len": 310,
+   "catalog_rows": null,
+   "registrable": "tanod.dev"
+  },
+  {
+   "origin": "https://mpp.hyreagent.fun",
+   "url": "https://mpp.hyreagent.fun/.well-known/x402",
+   "http": 200,
+   "final_url": "https://mpp.hyreagent.fun/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 381182,
+   "sha256": "7d024a53cc7b013eee9d1f7a593b65d01adb40bb36f56a8a26531a437c35ba09",
+   "json": true,
+   "declared_version": 1,
+   "surfaces": {
+    "items[].accepts[].maxAmountRequired": [
+     "80000",
+     "10000",
+     "40000"
+    ],
+    "items[].accepts[].amount": [
+     "80000",
+     "10000",
+     "40000"
+    ],
+    "items[].metadata.price": [
+     "$0.0800",
+     "$0.0100",
+     "$0.0400"
+    ],
+    "resources[].accepts[].maxAmountRequired": [
+     "80000",
+     "10000",
+     "40000"
+    ],
+    "resources[].accepts[].amount": [
+     "80000",
+     "10000",
+     "40000"
+    ],
+    "resources[].metadata.price": [
+     "$0.0800",
+     "$0.0100",
+     "$0.0400"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [
+    "items[].accepts[].amount",
+    "items[].accepts[].maxAmountRequired",
+    "resources[].accepts[].amount",
+    "resources[].accepts[].maxAmountRequired"
+   ],
+   "label_surfaces": [
+    "items[].metadata.price",
+    "resources[].metadata.price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 160,
+   "catalog_rows": null,
+   "registrable": "hyreagent.fun"
+  },
+  {
+   "origin": "https://x402.aurelianflo.com",
+   "url": "https://x402.aurelianflo.com/.well-known/x402",
+   "http": 308,
+   "final_url": "https://x402.aurelianflo.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 78,
+   "sha256": "ddf6bfe16f7a68cf4a9dfed4a3688860e4a8a1dd5af5154af891a8b0764cd5ab",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "aurelianflo.com"
+  },
+  {
+   "origin": "https://fastx402.tools",
+   "url": "https://fastx402.tools/.well-known/x402",
+   "http": 200,
+   "final_url": "https://fastx402.tools/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 8086,
+   "sha256": "8ab7d31c1f1b9bfe2b4b6d4cfb2424626e83c1e7f21ba416d441845eb9c249cb",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 200,
+   "resources_len": 200,
+   "catalog_rows": null,
+   "registrable": "fastx402.tools"
+  },
+  {
+   "origin": "https://x402broker.com",
+   "url": "https://x402broker.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://x402broker.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 3507,
+   "sha256": "424f69d2acd1976ffb51bbec384b5b99b49c4aa4347beaa4ce64debd141c644f",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "accepts[].amount": [
+     "10000",
+     "10000"
+    ],
+    "accepts[].maxAmountRequired": [
+     "10000",
+     "10000"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [
+    "accepts[].amount",
+    "accepts[].maxAmountRequired"
+   ],
+   "label_surfaces": [],
+   "bare_string_resources": 2,
+   "resources_len": 2,
+   "catalog_rows": null,
+   "registrable": "x402broker.com"
+  },
+  {
+   "origin": "https://agentdiet.dev",
+   "url": "https://agentdiet.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://agentdiet.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 3463,
+   "sha256": "2608cb4c1c9af23e85bd46d09f7bcadd7d8404b50b5b74db13e63094a6d3f079",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "accepts[].amount": [
+     "10000",
+     "10000"
+    ],
+    "accepts[].maxAmountRequired": [
+     "10000",
+     "10000"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [
+    "accepts[].amount",
+    "accepts[].maxAmountRequired"
+   ],
+   "label_surfaces": [],
+   "bare_string_resources": 1,
+   "resources_len": 1,
+   "catalog_rows": null,
+   "registrable": "agentdiet.dev"
+  },
+  {
+   "origin": "https://gpt55.558686.xyz",
+   "url": "https://gpt55.558686.xyz/.well-known/x402",
+   "http": 530,
+   "final_url": "https://gpt55.558686.xyz/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 763,
+   "sha256": "c277e8ac1d81619de4d50f83f6da298d38998de0d04b9fe9d73c61250f789222",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "558686.xyz"
+  },
+  {
+   "origin": "https://agentstoolshub.com",
+   "url": "https://agentstoolshub.com/.well-known/x402",
+   "http": 503,
+   "final_url": "https://agentstoolshub.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 80,
+   "sha256": "4774b216305ddd09c07b88061c723b2e24bbdd81554f235bf9fa96e8703ac6e9",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "agentstoolshub.com"
+  },
+  {
+   "origin": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev",
+   "url": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 10231,
+   "sha256": "e0c65551a5cd848b078353c25118acff33f2e3c58ffb74ef394eb564605d69b1",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 126,
+   "resources_len": 126,
+   "catalog_rows": null,
+   "registrable": "x402-bazaar-rank-worker.workers.dev"
+  },
+  {
+   "origin": "https://api.losbeto.xyz",
+   "url": "https://api.losbeto.xyz/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.losbeto.xyz/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 59761,
+   "sha256": "7044d0bb44473608240e40ec9867a90a8cd78832359f289f74fb77ec9f1049ba",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "endpoints[].price": [
+     "$0.01",
+     "$0.006",
+     "$0.01"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "endpoints[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "losbeto.xyz"
+  },
+  {
+   "origin": "https://changelog-state-api.replit.app",
+   "url": "https://changelog-state-api.replit.app/.well-known/x402",
+   "http": 200,
+   "final_url": "https://changelog-state-api.replit.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 2080,
+   "sha256": "4298a4725a4cfae0a5ed6cbd71f2bf9537ec151b87748c1744cd6cc9271b43ca",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "price.amount": [
+     "0.01"
+    ],
+    "accepts[].amount": [
+     "10000",
+     "10000"
+    ]
+   },
+   "loose_only_surfaces": [
+    "accepts[].asset.extra.feePayer",
+    "price.atomicAmount"
+   ],
+   "normative_surfaces": [
+    "accepts[].amount",
+    "price.amount"
+   ],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "changelog-state-api.replit.app"
+  },
+  {
+   "origin": "https://chainray.online",
+   "url": "https://chainray.online/.well-known/x402",
+   "http": 200,
+   "final_url": "https://chainray.online/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 4237,
+   "sha256": "2e79a08c90bacd43c8c321283057dde8a6fdc59ccbc6b6032b9fd700caab0807",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 94,
+   "resources_len": 94,
+   "catalog_rows": null,
+   "registrable": "chainray.online"
+  },
+  {
+   "origin": "https://exchangerebel.com",
+   "url": "https://exchangerebel.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://exchangerebel.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 8538,
+   "sha256": "d54f61596d8cad3cf6d114c0242f8711e1481bd0870af8438c4fe6cd89b7bb2f",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 163,
+   "resources_len": 163,
+   "catalog_rows": null,
+   "registrable": "exchangerebel.com"
+  },
+  {
+   "origin": "https://pricing-state-api.replit.app",
+   "url": "https://pricing-state-api.replit.app/.well-known/x402",
+   "http": 200,
+   "final_url": "https://pricing-state-api.replit.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 3078,
+   "sha256": "92b1fbe9716624cc52c20dd71444ef59ec04dbb9cd70b636db272485d3c063f8",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "payment.accepts[].amount": [
+     "10000",
+     "10000"
+    ]
+   },
+   "loose_only_surfaces": [
+    "payment.pricePerCall"
+   ],
+   "normative_surfaces": [
+    "payment.accepts[].amount"
+   ],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "pricing-state-api.replit.app"
+  },
+  {
+   "origin": "https://status-state-api.replit.app",
+   "url": "https://status-state-api.replit.app/.well-known/x402",
+   "http": 200,
+   "final_url": "https://status-state-api.replit.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 5773,
+   "sha256": "05e1580a8f037c6859e6f6bb9255528c1e0d16f46b050043416102dc2c92dbcc",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "accepts[].price": [
+     "$0.01",
+     "$0.01"
+    ],
+    "resources[].price": [
+     "$0.01",
+     "$0.01",
+     "$0.01"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "accepts[].price",
+    "resources[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 66,
+   "catalog_rows": null,
+   "registrable": "status-state-api.replit.app"
+  },
+  {
+   "origin": "https://chain.intel.rallylive.ca",
+   "url": "https://chain.intel.rallylive.ca/.well-known/x402",
+   "http": 404,
+   "final_url": "https://chain.intel.rallylive.ca/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "rallylive.ca"
+  },
+  {
+   "origin": "https://base-agent-preflight.bytoken2023.workers.dev",
+   "url": "https://base-agent-preflight.bytoken2023.workers.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://base-agent-preflight.bytoken2023.workers.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 124997,
+   "sha256": "380289410e9abc23258769efd42eb6772d2060877e49bdf2fbd2b00c011cc29a",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {
+    "agent_onboarding.heroes[].price_usdc": [
+     "0.010001",
+     "0.015002"
+    ],
+    "agent_routing.intent_families[].operations[].price_usdc": [
+     "$0.010001",
+     "$0.015002",
+     "$0.010002"
+    ],
+    "paid_operations[].price_usdc": [
+     "$0.075",
+     "$0.075002",
+     "$0.100002"
+    ]
+   },
+   "loose_only_surfaces": [
+    "agent_onboarding.heroes[].list_price_usdc",
+    "paid_operations[].list_price_usdc"
+   ],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "agent_onboarding.heroes[].price_usdc",
+    "agent_routing.intent_families[].operations[].price_usdc",
+    "paid_operations[].price_usdc"
+   ],
+   "bare_string_resources": 77,
+   "resources_len": 77,
+   "catalog_rows": null,
+   "registrable": "bytoken2023.workers.dev"
+  },
+  {
+   "origin": "https://x402.datakoot.com",
+   "url": "https://x402.datakoot.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://x402.datakoot.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 2992,
+   "sha256": "b56fe3d92de4cccbce944b5630ae64cc1dccec0e99c2be77b13162b0308fb766",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 52,
+   "resources_len": 52,
+   "catalog_rows": null,
+   "registrable": "datakoot.com"
+  },
+  {
+   "origin": "https://47620.xyz",
+   "url": "https://47620.xyz/.well-known/x402",
+   "http": 200,
+   "final_url": "https://47620.xyz/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 283554,
+   "sha256": "a89a63584af371633ce40380f52e339ed22b4d71f4e3c37148bcbc343193407b",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "resources[].accepts[].amount": [
+     "20000",
+     "20000",
+     "20000"
+    ],
+    "resources[].accepts[].maxAmountRequired": [
+     "20000",
+     "20000",
+     "20000"
+    ],
+    "resources[].extensions.bazaar.info.input.queryParams.amount": [
+     "example"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [
+    "resources[].accepts[].amount",
+    "resources[].accepts[].maxAmountRequired",
+    "resources[].extensions.bazaar.info.input.queryParams.amount"
+   ],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 121,
+   "catalog_rows": null,
+   "registrable": "47620.xyz"
+  },
+  {
+   "origin": "https://squeezeos-api.onrender.com",
+   "url": "https://squeezeos-api.onrender.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://squeezeos-api.onrender.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 3110,
+   "sha256": "31847ddf536b4a519ba7173a56301d7b663bd12311893baf040dc40cd9909ca5",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 51,
+   "resources_len": 51,
+   "catalog_rows": null,
+   "registrable": "squeezeos-api.onrender.com"
+  },
+  {
+   "origin": "https://x402-zoo.lolagent.workers.dev",
+   "url": "https://x402-zoo.lolagent.workers.dev/.well-known/x402",
+   "http": 404,
+   "final_url": "https://x402-zoo.lolagent.workers.dev/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "lolagent.workers.dev"
+  },
+  {
+   "origin": "https://aoe-tip-seller.magicalcifer.workers.dev",
+   "url": "https://aoe-tip-seller.magicalcifer.workers.dev/.well-known/x402",
+   "http": 404,
+   "final_url": "https://aoe-tip-seller.magicalcifer.workers.dev/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "magicalcifer.workers.dev"
+  },
+  {
+   "origin": "https://apexfaucet.xyz",
+   "url": "https://apexfaucet.xyz/.well-known/x402",
+   "http": 200,
+   "final_url": "https://apexfaucet.xyz/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 172991,
+   "sha256": "66340947276fd455979d007fb7f0d69d1e29588bdcd0df2896bc129144842b64",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {
+    "cardPass.priceUsd": [
+     5
+    ]
+   },
+   "loose_only_surfaces": [
+    "networks[].feePayer"
+   ],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "cardPass.priceUsd"
+   ],
+   "bare_string_resources": 148,
+   "resources_len": 148,
+   "catalog_rows": null,
+   "registrable": "apexfaucet.xyz"
+  },
+  {
+   "origin": "https://api.nansen.ai",
+   "url": "https://api.nansen.ai/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.nansen.ai/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 4563,
+   "sha256": "afafe7d915998b52c6d9b2f09cb32be7522cba2d0cf329cbf73a2efa305f5665",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 93,
+   "resources_len": 93,
+   "catalog_rows": null,
+   "registrable": "nansen.ai"
+  },
+  {
+   "origin": "https://api.gadgethumans.com",
+   "url": "https://api.gadgethumans.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.gadgethumans.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 1858384,
+   "sha256": "5c761a5c0c6616af1af315ad69eaf480a6181c07fbb18ec441a2155b8f9c926b",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "detailedResources[].price": [
+     "$0.005",
+     "$0.005",
+     "$0.002"
+    ],
+    "detailedResources[].price_usd": [
+     "$0.005",
+     "$0.005",
+     "$0.002"
+    ],
+    "detailedResources[].pricing.amountUsdc": [
+     0.005,
+     0.005,
+     0.002
+    ],
+    "detailedResources[].accepts[].amount": [
+     "5000",
+     "5000",
+     "5000"
+    ],
+    "detailedResources[].accepts[].maxAmountRequired": [
+     "5000",
+     "5000",
+     "2000"
+    ],
+    "detailedResources[].accepts[].outputSchema.output.example.market.price_usd": [
+     "0.42"
+    ],
+    "detailedResources[].accepts[].extensions.bazaar.info.output.example.market.price_usd": [
+     "0.42"
+    ],
+    "detailedResources[].extensions.bazaar.info.output.example.market.price_usd": [
+     "0.42"
+    ],
+    "items[].accepts[].amount": [
+     "5000",
+     "5000",
+     "5000"
+    ],
+    "items[].accepts[].maxAmountRequired": [
+     "5000",
+     "5000",
+     "2000"
+    ],
+    "items[].accepts[].outputSchema.output.example.market.price_usd": [
+     "0.42"
+    ],
+    "items[].accepts[].extensions.bazaar.info.output.example.market.price_usd": [
+     "0.42"
+    ],
+    "catalog[].accepts[].amount": [
+     "5000",
+     "5000",
+     "5000"
+    ],
+    "catalog[].accepts[].maxAmountRequired": [
+     "5000",
+     "5000",
+     "2000"
+    ],
+    "catalog[].accepts[].outputSchema.output.example.market.price_usd": [
+     "0.42"
+    ],
+    "catalog[].accepts[].extensions.bazaar.info.output.example.market.price_usd": [
+     "0.42"
+    ],
+    "price": [
+     "$0.001-$0.005"
+    ]
+   },
+   "loose_only_surfaces": [
+    "catalog[].accepts[].extra.feePayer",
+    "detailedResources[].accepts[].extra.feePayer",
+    "items[].accepts[].extra.feePayer"
+   ],
+   "normative_surfaces": [
+    "catalog[].accepts[].amount",
+    "catalog[].accepts[].maxAmountRequired",
+    "detailedResources[].accepts[].amount",
+    "detailedResources[].accepts[].maxAmountRequired",
+    "items[].accepts[].amount",
+    "items[].accepts[].maxAmountRequired"
+   ],
+   "label_surfaces": [
+    "catalog[].accepts[].extensions.bazaar.info.output.example.market.price_usd",
+    "catalog[].accepts[].outputSchema.output.example.market.price_usd",
+    "detailedResources[].accepts[].extensions.bazaar.info.output.example.market.price_usd",
+    "detailedResources[].accepts[].outputSchema.output.example.market.price_usd",
+    "detailedResources[].extensions.bazaar.info.output.example.market.price_usd",
+    "detailedResources[].price",
+    "detailedResources[].price_usd",
+    "detailedResources[].pricing.amountUsdc",
+    "items[].accepts[].extensions.bazaar.info.output.example.market.price_usd",
+    "items[].accepts[].outputSchema.output.example.market.price_usd",
+    "price"
+   ],
+   "bare_string_resources": 122,
+   "resources_len": 122,
+   "catalog_rows": null,
+   "registrable": "gadgethumans.com"
+  },
+  {
+   "origin": "https://sol.blockrun.ai",
+   "url": "https://sol.blockrun.ai/.well-known/x402",
+   "http": 200,
+   "final_url": "https://sol.blockrun.ai/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 3683,
+   "sha256": "97397db74d3e547aa034926f141fe367a0240ddd5696cd94c4085bb7bccb4bc5",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "endpoints[].price": [
+     "$0.0001-$5",
+     "$0.0001-$5",
+     "$0.08"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "endpoints[].price"
+   ],
+   "bare_string_resources": 27,
+   "resources_len": 27,
+   "catalog_rows": null,
+   "registrable": "blockrun.ai"
+  },
+  {
+   "origin": "https://engedi.digi-life17.workers.dev",
+   "url": "https://engedi.digi-life17.workers.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://engedi.digi-life17.workers.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 39311,
+   "sha256": "78fde6ae23cb03b587333f419fcbd90ed8c28eae1a3f4eca87e549ffb3126ef2",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {
+    "resources[].price": [
+     "FREE",
+     "FREE",
+     "FREE"
+    ],
+    "resources[].priceUsdc": [
+     0,
+     0,
+     0
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "resources[].price",
+    "resources[].priceUsdc"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 94,
+   "catalog_rows": null,
+   "registrable": "digi-life17.workers.dev"
+  },
+  {
+   "origin": "https://madeonsol.com",
+   "url": "https://madeonsol.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://madeonsol.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 10360,
+   "sha256": "ce9c4d7611d826f3313e4b7fb02353bc478868f4b4436f1929221e8d970ee472",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "endpoints[].price": [
+     "$0.02",
+     "$0.005",
+     "$0.005"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "endpoints[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "madeonsol.com"
+  },
+  {
+   "origin": "https://x402.freeq.one",
+   "url": "https://x402.freeq.one/.well-known/x402",
+   "http": 200,
+   "final_url": "https://x402.freeq.one/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 32883,
+   "sha256": "c0761785ca9d011975906766a89085a88d32a4940c3b59b6d73ada7fb35ba3d3",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "services[].amount": [
+     "0.05",
+     "0.002",
+     "0.001"
+    ],
+    "services[].max_amount": [
+     "50.25"
+    ],
+    "markets.agoragentic.price_usd": [
+     "0.01"
+    ],
+    "markets.bazaar.price_usd": [
+     "0.001"
+    ]
+   },
+   "loose_only_surfaces": [
+    "markets.agoragentic.prices.token_price",
+    "markets.bazaar.prices.token_price"
+   ],
+   "normative_surfaces": [
+    "services[].amount"
+   ],
+   "label_surfaces": [
+    "markets.agoragentic.price_usd",
+    "markets.bazaar.price_usd",
+    "services[].max_amount"
+   ],
+   "bare_string_resources": 172,
+   "resources_len": 172,
+   "catalog_rows": null,
+   "registrable": "freeq.one"
+  },
+  {
+   "origin": "https://x402.onchainexpat.com",
+   "url": "https://x402.onchainexpat.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://x402.onchainexpat.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 21035,
+   "sha256": "a522246e7e3e023d069eb8b0b00e6e5f0c2e214a1e5ce7fc28e2e532d55ba132",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {
+    "endpoints[].price": [
+     "$0.05",
+     "$0.08",
+     "$0.07"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "endpoints[].price"
+   ],
+   "bare_string_resources": 103,
+   "resources_len": 103,
+   "catalog_rows": null,
+   "registrable": "onchainexpat.com"
+  },
+  {
+   "origin": "https://api.vibe.airforce",
+   "url": "https://api.vibe.airforce/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.vibe.airforce/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 20646,
+   "sha256": "930967ed3492891076ebe1f6a5a6e8c3acdc1cfd0ff3103cce35a6afb5b74381",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {
+    "resourceDetails[].price.amount": [
+     "250000",
+     "50000",
+     "500000"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [
+    "resourceDetails[].price.amount"
+   ],
+   "label_surfaces": [],
+   "bare_string_resources": 95,
+   "resources_len": 95,
+   "catalog_rows": null,
+   "registrable": "vibe.airforce"
+  },
+  {
+   "origin": "https://x402-catalog-history.ai-business-surface.workers.dev",
+   "url": "https://x402-catalog-history.ai-business-surface.workers.dev/.well-known/x402",
+   "http": 404,
+   "final_url": "https://x402-catalog-history.ai-business-surface.workers.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 3776,
+   "sha256": "468057ade9be664954f6c68cbce13a01351d6820f473743f30b6297ee300b526",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "ai-business-surface.workers.dev"
+  },
+  {
+   "origin": "https://lumenworks-x402-decoder.onrender.com",
+   "url": "https://lumenworks-x402-decoder.onrender.com/.well-known/x402",
+   "http": 404,
+   "final_url": "https://lumenworks-x402-decoder.onrender.com/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 10,
+   "sha256": "7515bf959b73b956ceb967351c7e299cbb3668a53d35f9c770eb72e00d93ced6",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "lumenworks-x402-decoder.onrender.com"
+  },
+  {
+   "origin": "https://portfolio.lonestaroracle.xyz",
+   "url": "https://portfolio.lonestaroracle.xyz/.well-known/x402",
+   "http": 200,
+   "final_url": "https://portfolio.lonestaroracle.xyz/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 993,
+   "sha256": "cc1ead42a9e489c3b9ab816dfc2722873a95035059dd3c3b6ac2fdb825339d5a",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 1,
+   "resources_len": 1,
+   "catalog_rows": null,
+   "registrable": "lonestaroracle.xyz"
+  },
+  {
+   "origin": "https://chipscan.steveyuowoo.workers.dev",
+   "url": "https://chipscan.steveyuowoo.workers.dev/.well-known/x402",
+   "http": 404,
+   "final_url": "https://chipscan.steveyuowoo.workers.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 707,
+   "sha256": "b3217238f228e94940ce68bb6bc950bbec68a1f1f6f6d44882f635f4e9e0ee15",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "steveyuowoo.workers.dev"
+  },
+  {
+   "origin": "https://api.youraitools.co",
+   "url": "https://api.youraitools.co/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.youraitools.co/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 12277,
+   "sha256": "b0f59b40fa8686d87cd52c884af07251edad2dbfdfc579d277727ebe002c5f4f",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 68,
+   "resources_len": 68,
+   "catalog_rows": null,
+   "registrable": "youraitools.co"
+  },
+  {
+   "origin": "https://api.demandex.dev",
+   "url": "https://api.demandex.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.demandex.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 5351,
+   "sha256": "97d3b74479d82aab352da5c0dfaa2c41e1989da5921c5a522f6f394274e13de3",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "endpoints[].price": [
+     "$0.01",
+     "$0.02",
+     "$0.05"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "endpoints[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "demandex.dev"
+  },
+  {
+   "origin": "https://01a046b2-7104-74c2-8a02-04715d7235e1-mj99ttjfh-xai-org.vercel.app",
+   "url": "https://01a046b2-7104-74c2-8a02-04715d7235e1-mj99ttjfh-xai-org.vercel.app/.well-known/x402",
+   "http": 401,
+   "final_url": "https://01a046b2-7104-74c2-8a02-04715d7235e1-mj99ttjfh-xai-org.vercel.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 619,
+   "sha256": "f05eef78b139505b7d8b77f96c5ff97f5645161354d5e9ce1f44eeed0d23fc14",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "01a046b2-7104-74c2-8a02-04715d7235e1-mj99ttjfh-xai-org.vercel.app"
+  },
+  {
+   "origin": "https://x402.minara.ai",
+   "url": "https://x402.minara.ai/.well-known/x402",
+   "http": 200,
+   "final_url": "https://x402.minara.ai/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 1364,
+   "sha256": "def61611fa54817890c1616e5a955509b1f6cc1f9f46ef3b40beee1069c09dea",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 11,
+   "resources_len": 11,
+   "catalog_rows": null,
+   "registrable": "minara.ai"
+  },
+  {
+   "origin": "https://legible-check.ezealfa.workers.dev",
+   "url": "https://legible-check.ezealfa.workers.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://legible-check.ezealfa.workers.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 6461,
+   "sha256": "65b177830f011203dcb12be9900b0ff8a2230f68490ab33994b450fceded1795",
+   "json": true,
+   "declared_version": 1,
+   "surfaces": {
+    "endpoints[].price": [
+     "$0.02",
+     "$0.02",
+     "$0.01"
+    ],
+    "endpoints[].accepts[].amount": [
+     "20000",
+     "20000",
+     "10000"
+    ],
+    "deepVerification[].price": [
+     "$0.001",
+     "$0.001",
+     "$0.001"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [
+    "endpoints[].accepts[].amount"
+   ],
+   "label_surfaces": [
+    "deepVerification[].price",
+    "endpoints[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "ezealfa.workers.dev"
+  },
+  {
+   "origin": "https://x402.klimalabs.com",
+   "url": "https://x402.klimalabs.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://x402.klimalabs.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 33687,
+   "sha256": "ba834e2a625f770f10039524b6404d539e4e263e6e037f9afa7e39874e9f1a80",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "endpoints[].actions[].fee": [
+     "0",
+     "0",
+     "0"
+    ],
+    "endpoints[].fee": [
+     "0.001",
+     "0"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "endpoints[].actions[].fee",
+    "endpoints[].fee"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "klimalabs.com"
+  },
+  {
+   "origin": "https://agent-deals.gm-tools.workers.dev",
+   "url": "https://agent-deals.gm-tools.workers.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://agent-deals.gm-tools.workers.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 78,
+   "sha256": "0419682a7ecb8ce102db32e95e2170f867cb2a937024a741be576beb84470c6a",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 1,
+   "resources_len": 1,
+   "catalog_rows": null,
+   "registrable": "gm-tools.workers.dev"
+  },
+  {
+   "origin": "https://api.hergertsynthora.com",
+   "url": "https://api.hergertsynthora.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.hergertsynthora.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 1520,
+   "sha256": "b54dea5303e2386898c98641c4c44ba9caf10429cc676d5b7dd5c7549df269a6",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 26,
+   "resources_len": 26,
+   "catalog_rows": null,
+   "registrable": "hergertsynthora.com"
+  },
+  {
+   "origin": "https://nanoapi.org",
+   "url": "https://nanoapi.org/.well-known/x402",
+   "http": 200,
+   "final_url": "https://nanoapi.org/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 211,
+   "sha256": "b0ff05c848859a07357de3e1ab16ebf5400d02cf2ae5194a2106516c9e8418fb",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 5,
+   "resources_len": 5,
+   "catalog_rows": null,
+   "registrable": "nanoapi.org"
+  },
+  {
+   "origin": "https://01a046b2-7104-74c2-8a02-04715d7235e1-hktfmuhfi-xai-org.vercel.app",
+   "url": "https://01a046b2-7104-74c2-8a02-04715d7235e1-hktfmuhfi-xai-org.vercel.app/.well-known/x402",
+   "http": 401,
+   "final_url": "https://01a046b2-7104-74c2-8a02-04715d7235e1-hktfmuhfi-xai-org.vercel.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 619,
+   "sha256": "4c4b3ab1e8c8ba923c634db0135eaace791ab9bf7248f92cb479b1a40684bcf1",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "01a046b2-7104-74c2-8a02-04715d7235e1-hktfmuhfi-xai-org.vercel.app"
+  },
+  {
+   "origin": "https://labor.lonestaroracle.xyz",
+   "url": "https://labor.lonestaroracle.xyz/.well-known/x402",
+   "http": 200,
+   "final_url": "https://labor.lonestaroracle.xyz/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 983,
+   "sha256": "bf597b42da2168906713ed6064a0fa37ebf9c10e5ae543a7f2b4a4c45828b69a",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 1,
+   "resources_len": 1,
+   "catalog_rows": null,
+   "registrable": "lonestaroracle.xyz"
+  },
+  {
+   "origin": "https://contactcampaigns.com",
+   "url": "https://contactcampaigns.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://contactcampaigns.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 13844,
+   "sha256": "1c0368c454053b2db0a5d118f32566e9f8ab924227514defffcd7f5501eca066",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "endpoints[].priceUsdc": [
+     "0.05",
+     "1.00",
+     "9.99"
+    ],
+    "endpoints[].maxAmountRequired": [
+     "50000",
+     "1000000",
+     "9990000"
+    ]
+   },
+   "loose_only_surfaces": [
+    "endpoints[].lifetimeFeaturedPriceUsdc",
+    "endpoints[].nanoMaxAmountRequiredRaw",
+    "endpoints[].nanoPriceXno"
+   ],
+   "normative_surfaces": [
+    "endpoints[].maxAmountRequired"
+   ],
+   "label_surfaces": [
+    "endpoints[].priceUsdc"
+   ],
+   "bare_string_resources": 8,
+   "resources_len": 8,
+   "catalog_rows": null,
+   "registrable": "contactcampaigns.com"
+  },
+  {
+   "origin": "https://www.capminal.ai",
+   "url": "https://www.capminal.ai/.well-known/x402",
+   "http": 404,
+   "final_url": "https://www.capminal.ai/.well-known/x402",
+   "content_type": "text/html",
+   "bytes": 46551,
+   "sha256": "bd29bb2318c60af151e3e664d5d55f0076078a6d8c2419467b1427c8cd9cb5a9",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "capminal.ai"
+  },
+  {
+   "origin": "http://weather-api-production-c885.up.railway.app",
+   "url": "http://weather-api-production-c885.up.railway.app/.well-known/x402",
+   "http": 404,
+   "final_url": "https://weather-api-production-c885.up.railway.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 101,
+   "sha256": "f3eb0536661497a84cf806594969627cf1a46e4f7934e83799451f023c6d6038",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "railway.app"
+  },
+  {
+   "origin": "https://base.mapleai.shop",
+   "url": "https://base.mapleai.shop/.well-known/x402",
+   "http": 200,
+   "final_url": "https://base.mapleai.shop/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 12389,
+   "sha256": "968f0a1ee0e4dde1407da93e62f522548307f887af4763b8064dfc569120d135",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {
+    "resources[].price": [
+     "from $0.0010 per request",
+     "from $0.0010 per request",
+     "from $0.0010 per request"
+    ]
+   },
+   "loose_only_surfaces": [
+    "resources[].pricedBy"
+   ],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "resources[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 26,
+   "catalog_rows": null,
+   "registrable": "mapleai.shop"
+  },
+  {
+   "origin": "http://requirementsextract-mainnet-production.up.railway.app",
+   "url": "http://requirementsextract-mainnet-production.up.railway.app/.well-known/x402",
+   "http": 200,
+   "final_url": "https://requirementsextract-mainnet-production.up.railway.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 346,
+   "sha256": "79fa9061f21d6e03ca264a29ee02ba995ce331ceb844892bd987924a995047b6",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {
+    "resources[].price": [
+     "$0.03"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "resources[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 1,
+   "catalog_rows": null,
+   "registrable": "railway.app"
+  },
+  {
+   "origin": "https://kristo-intelligence-api.onrender.com",
+   "url": "https://kristo-intelligence-api.onrender.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://kristo-intelligence-api.onrender.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 1776,
+   "sha256": "469a6acee5b57422cc3e2471af48bf5ddd1e6d65f7d4023cea2c22a046d0f702",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 6,
+   "catalog_rows": null,
+   "registrable": "kristo-intelligence-api.onrender.com"
+  },
+  {
+   "origin": "https://api.premiumrewards.vip",
+   "url": "https://api.premiumrewards.vip/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.premiumrewards.vip/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 9473,
+   "sha256": "d1356bff7075a7cfa633784bc54e02ff755d9f5ba312558162df9f4e017b12d5",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {
+    "offers[].price": [
+     "$0.01",
+     "$0.001",
+     "$0.02"
+    ],
+    "offers[].amount": [
+     "10000",
+     "1000",
+     "20000"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [
+    "offers[].amount"
+   ],
+   "label_surfaces": [
+    "offers[].price"
+   ],
+   "bare_string_resources": 28,
+   "resources_len": 28,
+   "catalog_rows": null,
+   "registrable": "premiumrewards.vip"
+  },
+  {
+   "origin": "https://carry-lens-api.netlify.app",
+   "url": "https://carry-lens-api.netlify.app/.well-known/x402",
+   "http": 200,
+   "final_url": "https://carry-lens-api.netlify.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 3305,
+   "sha256": "53893c145a56c01053a1800705aa7357539120eda5232d1a6f523cc419fb179a",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "resources[].accepts[].amount": [
+     "3000",
+     "10000",
+     "30000"
+    ]
+   },
+   "loose_only_surfaces": [
+    "resources[].metadata.input.queryParams.totalCostBps"
+   ],
+   "normative_surfaces": [
+    "resources[].accepts[].amount"
+   ],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 3,
+   "catalog_rows": null,
+   "registrable": "netlify.app"
+  },
+  {
+   "origin": "https://www.skavio.eu",
+   "url": "https://www.skavio.eu/.well-known/x402",
+   "http": 200,
+   "final_url": "https://www.skavio.eu/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 42866,
+   "sha256": "3fcf00f16fb350b21a2bbe1e1da462d7afa71429b7cd6297f4ab26848967e634",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "resources[].price_usd": [
+     "0.02",
+     "0.03",
+     "0.05"
+    ],
+    "resources[].price_usdc": [
+     "0.02",
+     "0.03",
+     "0.05"
+    ],
+    "resources[].accepts[].amount": [
+     "20000",
+     "30000",
+     "50000"
+    ],
+    "resources[].inputExample.amount": [
+     "2458.670422"
+    ],
+    "resources[].outputExample.analysis.cost_usd": [
+     9.94e-05
+    ]
+   },
+   "loose_only_surfaces": [
+    "resources[].outputExample.cost.provider_cost_usd"
+   ],
+   "normative_surfaces": [
+    "resources[].accepts[].amount",
+    "resources[].inputExample.amount"
+   ],
+   "label_surfaces": [
+    "resources[].outputExample.analysis.cost_usd",
+    "resources[].price_usd",
+    "resources[].price_usdc"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 7,
+   "catalog_rows": null,
+   "registrable": "skavio.eu"
+  },
+  {
+   "origin": "https://x402.cambrian.org",
+   "url": "https://x402.cambrian.org/.well-known/x402",
+   "http": 200,
+   "final_url": "https://x402.cambrian.org/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 4412,
+   "sha256": "04b61b89e2a32ddb4c8aaef2a4091e824f4a299e6e1a1eb07d5415877e2ba22a",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 83,
+   "resources_len": 83,
+   "catalog_rows": null,
+   "registrable": "cambrian.org"
+  },
+  {
+   "origin": "http://fresh-market-watch-production.up.railway.app",
+   "url": "http://fresh-market-watch-production.up.railway.app/.well-known/x402",
+   "http": 404,
+   "final_url": "https://fresh-market-watch-production.up.railway.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 101,
+   "sha256": "fd84742844e6eed65af37bf54cb26fafc740fa85bfeb738ef4ff1e32a1cae513",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "railway.app"
+  },
+  {
+   "origin": "https://superresearch.supercapital.fun",
+   "url": "https://superresearch.supercapital.fun/.well-known/x402",
+   "http": 522,
+   "final_url": "https://superresearch.supercapital.fun/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 991,
+   "sha256": "167ea47f9f27440734071bd0a481b90068dbb481163e4a7c3d00bbb17ff892f7",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "supercapital.fun"
+  },
+  {
+   "origin": "https://api.suverse.io",
+   "url": "https://api.suverse.io/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.suverse.io/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 33332,
+   "sha256": "13d0e3507faa1efdf49ef6399c1a0a2169cfaf7f6b9b009cf0cf5264e00b2c50",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "items[].accepts[].amount": [
+     "5000",
+     "5000",
+     "10000"
+    ],
+    "items[].price_usd": [
+     0.005,
+     0.01,
+     0.01
+    ],
+    "items[].extensions.bazaar.info.output.example.data.fuel_items[].amount": [
+     612.4
+    ],
+    "items[].extensions.bazaar.info.output.example.data.fuel.cost_usd": [
+     165.2
+    ]
+   },
+   "loose_only_surfaces": [
+    "items[].accepts[].extra.feePayer",
+    "items[].extensions.bazaar.info.input.body.options.fuel_price",
+    "items[].extensions.bazaar.info.output.example.data.details[].cost_no_transponder",
+    "items[].extensions.bazaar.info.output.example.data.details[].cost_transponder",
+    "items[].extensions.bazaar.info.output.example.data.fuel_items[].price_per_gallon",
+    "items[].extensions.bazaar.info.output.example.data.rate_amount",
+    "items[].extensions.bazaar.info.output.example.data.total_amount_usd",
+    "items[].input.body.options.fuel_price",
+    "items[].price_usdc_micro"
+   ],
+   "normative_surfaces": [
+    "items[].accepts[].amount",
+    "items[].extensions.bazaar.info.output.example.data.fuel_items[].amount"
+   ],
+   "label_surfaces": [
+    "items[].extensions.bazaar.info.output.example.data.fuel.cost_usd",
+    "items[].price_usd"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "suverse.io"
+  },
+  {
+   "origin": "https://favpulse.media",
+   "url": "https://favpulse.media/.well-known/x402",
+   "http": 200,
+   "final_url": "https://favpulse.media/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 48274,
+   "sha256": "e3f98a5e71746fcd30a139c9174d2ee2cc7fd9013ffe155edae2a7abfdb1d136",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "resources[].accepts[].amount": [
+     "50000",
+     "20000",
+     "30000"
+    ],
+    "endpoints[].price": [
+     "$0.001",
+     "$0.001",
+     "$0.001"
+    ]
+   },
+   "loose_only_surfaces": [
+    "flagship.realityPortfolio.upfrontPriceUsd"
+   ],
+   "normative_surfaces": [
+    "resources[].accepts[].amount"
+   ],
+   "label_surfaces": [
+    "endpoints[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 83,
+   "catalog_rows": null,
+   "registrable": "favpulse.media"
+  },
+  {
+   "origin": "https://recallguard-api.vercel.app",
+   "url": "https://recallguard-api.vercel.app/.well-known/x402",
+   "http": 404,
+   "final_url": "https://recallguard-api.vercel.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 51,
+   "sha256": "cbedd85f9e8dc389c05b1de8213c2010f52f446e2cbb3d55bdbd3955b99ba557",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "recallguard-api.vercel.app"
+  },
+  {
+   "origin": "https://cleanread402.netlify.app",
+   "url": "https://cleanread402.netlify.app/.well-known/x402",
+   "http": 200,
+   "final_url": "https://cleanread402.netlify.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 15588,
+   "sha256": "422e572050ae42e854ad235fd3b64ec834d68785bf3abe94243889190886f4b5",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "resources[].accepts[].amount": [
+     "10000",
+     "5000",
+     "5000"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [
+    "resources[].accepts[].amount"
+   ],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 7,
+   "catalog_rows": null,
+   "registrable": "netlify.app"
+  },
+  {
+   "origin": "https://search.scrapemole.workers.dev",
+   "url": "https://search.scrapemole.workers.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://search.scrapemole.workers.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 375,
+   "sha256": "a8fd1a493b590501469d7dbf0a931652e4106d35438ff2ec2f0d3817f3719216",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 3,
+   "resources_len": 3,
+   "catalog_rows": null,
+   "registrable": "scrapemole.workers.dev"
+  },
+  {
+   "origin": "https://api.voipstore.xyz",
+   "url": "https://api.voipstore.xyz/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.voipstore.xyz/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 995,
+   "sha256": "79dd9e8819413339346b6c613e17a6bc97394414524cd53f85b9e8ede8f759ce",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 4,
+   "catalog_rows": null,
+   "registrable": "voipstore.xyz"
+  },
+  {
+   "origin": "https://api.vindexapi.dev",
+   "url": "https://api.vindexapi.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://api.vindexapi.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 6157,
+   "sha256": "92bbef15e1dc6fcd432838280db2fdf41c8adc00fb4b2c11c3ef73b0d90d582f",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "endpoints[].price": [
+     "$0.01",
+     "$0.01",
+     "$0.05"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "endpoints[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "vindexapi.dev"
+  },
+  {
+   "origin": "https://preflight-agent.netlify.app",
+   "url": "https://preflight-agent.netlify.app/.well-known/x402",
+   "http": 404,
+   "final_url": "https://preflight-agent.netlify.app/.well-known/x402",
+   "content_type": "text/html",
+   "bytes": 3449,
+   "sha256": "8514f0009a58c6e0acb5468f88037732b59b70af5e524f452e3bef8fb33effc5",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "netlify.app"
+  },
+  {
+   "origin": "https://crossfin.dev",
+   "url": "https://crossfin.dev/.well-known/x402",
+   "http": 404,
+   "final_url": "https://crossfin.dev/.well-known/x402",
+   "content_type": "text/plain",
+   "bytes": 13,
+   "sha256": "7d04f7431bbfa41a04bcc7e6b98b9de0d919756c4c671c5785c99fff45f16402",
+   "json": false,
+   "catalog_rows": null,
+   "registrable": "crossfin.dev"
+  },
+  {
+   "origin": "https://www.x420.dev",
+   "url": "https://www.x420.dev/.well-known/x402",
+   "http": 308,
+   "final_url": "https://www.x420.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 67,
+   "sha256": "29ef760c8405e6023f93047736dbff6e18fd20d4b2282192cef1398c99bdb3f8",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "x420.dev"
+  },
+  {
+   "origin": "https://nexuseval.vercel.app",
+   "url": "https://nexuseval.vercel.app/.well-known/x402",
+   "http": 200,
+   "final_url": "https://nexuseval.vercel.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 15483,
+   "sha256": "66168667185a9924ae36957446866ff54b3d2641115f06452ed20019de11b40f",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {
+    "resources[].price": [
+     "$0.25",
+     "$2.99",
+     "$0.01"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "resources[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 25,
+   "catalog_rows": null,
+   "registrable": "nexuseval.vercel.app"
+  },
+  {
+   "origin": "https://x402.disputetracker.xyz",
+   "url": "https://x402.disputetracker.xyz/.well-known/x402",
+   "http": 200,
+   "final_url": "https://x402.disputetracker.xyz/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 12333,
+   "sha256": "e7aa23ad12f7188bad7d3b58cd27802f487e46704fa226b4cd6c425a57f68f80",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "resources[].accepts[].price": [
+     "$0.001",
+     "$0.001",
+     "$0.002"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "resources[].accepts[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 5,
+   "catalog_rows": null,
+   "registrable": "disputetracker.xyz"
+  },
+  {
+   "origin": "https://x402.hydratrader.ai",
+   "url": "https://x402.hydratrader.ai/.well-known/x402",
+   "http": 200,
+   "final_url": "https://x402.hydratrader.ai/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 6047,
+   "sha256": "86e91585048871c1a206246f0073851620bd77403b4d43b58b6ea0898e5d6139",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "resources[].accepts[].price": [
+     "$0.01",
+     "$0.03",
+     "$0.08"
+    ],
+    "resources[].accepts[].price_usdc": [
+     "0.01",
+     "0.03",
+     "0.08"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "resources[].accepts[].price",
+    "resources[].accepts[].price_usdc"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 9,
+   "catalog_rows": null,
+   "registrable": "hydratrader.ai"
+  },
+  {
+   "origin": "https://x402merchant.fun",
+   "url": "https://x402merchant.fun/.well-known/x402",
+   "http": null,
+   "error": "URLError",
+   "catalog_rows": null,
+   "registrable": "x402merchant.fun"
+  },
+  {
+   "origin": "https://softbot-reader-mainnet.softbot.workers.dev",
+   "url": "https://softbot-reader-mainnet.softbot.workers.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://softbot-reader-mainnet.softbot.workers.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 5299,
+   "sha256": "2027314845642eb3998df0fdf380f7fe8d8c97845875894c383b2685b835c4ab",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "resources[].accepts[].amount": [
+     "3000",
+     "3000",
+     "3000"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [
+    "resources[].accepts[].amount"
+   ],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 2,
+   "catalog_rows": null,
+   "registrable": "softbot.workers.dev"
+  },
+  {
+   "origin": "http://api.g402.ai",
+   "url": "http://api.g402.ai/.well-known/x402",
+   "http": 404,
+   "final_url": "https://api.g402.ai/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 27,
+   "sha256": "b2a6a930fde6ad7d90a27c8e1cf1bed7e412265a9468bb6e6508a984068e9b75",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "g402.ai"
+  },
+  {
+   "origin": "https://atlas-probability-api-production.up.railway.app",
+   "url": "https://atlas-probability-api-production.up.railway.app/.well-known/x402",
+   "http": 200,
+   "final_url": "https://atlas-probability-api-production.up.railway.app/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 2540,
+   "sha256": "44071de6dbd857889662ccb317ae78141e755a961ec5add7bcef04672ae26368",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "resources[].priceUsd": [
+     0.01,
+     0.005
+    ],
+    "tools[].priceUsd": [
+     0.01,
+     0.005
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "resources[].priceUsd",
+    "tools[].priceUsd"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 2,
+   "catalog_rows": null,
+   "registrable": "railway.app"
+  },
+  {
+   "origin": "https://domains.scrapemole.workers.dev",
+   "url": "https://domains.scrapemole.workers.dev/.well-known/x402",
+   "http": 200,
+   "final_url": "https://domains.scrapemole.workers.dev/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 593,
+   "sha256": "3175c164ada1a79f498232d6cb2481450fd194d09ad04a39fd6f3b9789c176be",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 6,
+   "resources_len": 6,
+   "catalog_rows": null,
+   "registrable": "scrapemole.workers.dev"
+  },
+  {
+   "origin": "https://agent-arcade.use.x402atlas.com",
+   "url": "https://agent-arcade.use.x402atlas.com/.well-known/x402",
+   "http": 200,
+   "final_url": "https://agent-arcade.use.x402atlas.com/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 593,
+   "sha256": "db4f47c5d9bbb122e2253f2c81f534d1fa1791bfd64fd7fe3348b0e2df71d7d8",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 10,
+   "resources_len": 10,
+   "catalog_rows": null,
+   "registrable": "x402atlas.com"
+  },
+  {
+   "origin": "http://aisecurityguard.io",
+   "url": "http://aisecurityguard.io/.well-known/x402",
+   "http": 200,
+   "final_url": "https://aisecurityguard.io/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 2673,
+   "sha256": "091c4ffaeb22a9b00d2b5f3373676d89775992a6e55191ef5685c20aab6c5e07",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 8,
+   "resources_len": 8,
+   "catalog_rows": null,
+   "registrable": "aisecurityguard.io"
+  },
+  {
+   "origin": "http://btcnode.uk",
+   "url": "http://btcnode.uk/.well-known/x402",
+   "http": 200,
+   "final_url": "https://btcnode.uk/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 9526,
+   "sha256": "0cef8b92133a1114b6d9649f63bb7fd07c820c26e31248b55062fce5c3672584",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "resources[].price_usd": [
+     "0.01",
+     "0.01",
+     "0.01"
+    ]
+   },
+   "loose_only_surfaces": [
+    "default_price_usd"
+   ],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "resources[].price_usd"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 60,
+   "catalog_rows": null,
+   "registrable": "btcnode.uk"
+  },
+  {
+   "origin": "https://cryptopulse.saascloud.ai",
+   "url": "https://cryptopulse.saascloud.ai/.well-known/x402",
+   "http": 404,
+   "final_url": "https://cryptopulse.saascloud.ai/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 21,
+   "sha256": "51d0a9e3bd9ffc25483790aaffe7a3597e642edd040dddb16aafc324e6e922ed",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "saascloud.ai"
+  },
+  {
+   "origin": "https://signals.nsgoods.org",
+   "url": "https://signals.nsgoods.org/.well-known/x402",
+   "http": 200,
+   "final_url": "https://signals.nsgoods.org/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 2645,
+   "sha256": "f3868d41445b750958265eaf07b04a597dd1c82322dd8a21b3e675ccc8bab3fb",
+   "json": true,
+   "declared_version": 2,
+   "surfaces": {
+    "endpoints[].price": [
+     "$0.01",
+     "$0.10",
+     "$0.005"
+    ]
+   },
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [
+    "endpoints[].price"
+   ],
+   "bare_string_resources": 0,
+   "resources_len": 0,
+   "catalog_rows": null,
+   "registrable": "nsgoods.org"
+  },
+  {
+   "origin": "https://sanctions.lonestaroracle.xyz",
+   "url": "https://sanctions.lonestaroracle.xyz/.well-known/x402",
+   "http": 200,
+   "final_url": "https://sanctions.lonestaroracle.xyz/.well-known/x402",
+   "content_type": "application/json",
+   "bytes": 992,
+   "sha256": "bcaf94032ed2693ad982055cb066b4d54a177e95963280e45a7028126699f894",
+   "json": true,
+   "declared_version": null,
+   "surfaces": {},
+   "loose_only_surfaces": [],
+   "normative_surfaces": [],
+   "label_surfaces": [],
+   "bare_string_resources": 1,
+   "resources_len": 1,
+   "catalog_rows": null,
+   "registrable": "lonestaroracle.xyz"
+  }
+ ]
+}

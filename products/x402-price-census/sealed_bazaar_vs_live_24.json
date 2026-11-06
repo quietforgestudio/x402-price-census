@@ -1,0 +1,919 @@
+{
+ "generated_by": "work/s612/bazaar_vs_live.py",
+ "declared_surface": {
+  "cdp": "https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources",
+  "payai": "https://facilitator.payai.network/discovery/resources"
+ },
+ "bazaar_page_sha256": {
+  "cdp": [
+   "a0937161e052f1a1ee8703524f98da5f292f0c96406b490c86b7b93e851c711a",
+   "229eb288448d6478edc07ad0059c207b80f7c1c2209c68182db2d05400afda4e",
+   "b0caf609e4f1ba33af608e4435aa3da42861866e1bcb20bd62d40411bc725d81",
+   "23d924a330ba67c02f8395d2c63a822a2558a0c09aae34191889a4723ee98cad",
+   "5d2a87ca46b31367c4d8c9be57fb207fb86e61dcb45bb02876cec2747a5eda53",
+   "a48918a2d78d2a75760f0c92f6a828e31519ce7e980f6c35d0499255c3316b9a",
+   "b3fb5549d6233adf9255195c06b8876c49150deda566f24b859a06c8d5e689dc",
+   "c2ce721fa89e3d0af754bf66bdf696d2d3d40e243eed1762bcf467d19c132569",
+   "7006bc500e50f657f9d37505c85281e16595d37e56b39cd0db4fc57d23217053",
+   "f4b8906db50f5f768784724bad79eda921334b612f0b2b10e95b927efb39f22a",
+   "a560cda7c09c1036f6f022743dd76fd90f15ad4d163931ca8276ca2b7aaad67b",
+   "5fbd7ea0d05e273e1520c2fa931653e0006ba667d7c006f200dbb1c7f6380e2a",
+   "992c589be955899c5a79911bd15fb828b8360ac1178e617421edfa7b43d90904",
+   "63e014c43eb128b5e433dd2f11531fbc6f3d94bfb3122967eecf3a883e351146",
+   "9698b7395a29a29dfbbf32e3c3d09f6fb51573a5a8b96d249484322e667aed34",
+   "f41a8500f7f899f39132ca533a14d44b99042f6c39fd8ae57d212eda5b00c471",
+   "00ab734245c72d3097dc3f58f256696e56a1fa34adce76c723c7da43a1aa4e1a",
+   "df4f6c45c0de3b0087f4d8e677f0d01e86da58e4177022bccacc229822b2211c",
+   "49bc7db48a9ef3c89bdf6846e04738a774ea7b8eed78cbbb6040f9875542d93b",
+   "bb8b2932715340705dc44260d5eae4f66c1cbfaca8f74bb58cac83ce28b7a346",
+   "30f496011e7ffa39f968c8b5c23cff91507c7e49b56c9ba0a6fe9ce2116902b2",
+   "634026eb8f029b30e08c1b586deadc7c71e2602f8271f1af46c5f2230770fcf4",
+   "45d21fd57fa571db69f1791ad37430aca926dd5ed362450c74a9badb7ec79c22",
+   "1a5b26c0472c7a90e1cd04112222e4a0648c321a2cabba99f66b7700703c03a4",
+   "a18bfff2e4d7867901bda15ee8669306c79c7f157ab66e78898b5b861c1fc869",
+   "77c48411ea1fb855a212a59e0c73724cb2a46ea7e0ce047bc5bb3ab21705a404",
+   "063e5a9516d321555aaeba0fbef0d945235060f61954e8aff4c4ad8c57264b3a",
+   "a93f74406964461944447cda7d7f4975a3bddc400b586abc76fb913be9877fe8",
+   "8804964995f169764afdfd6d3656b922f1df6c8d0691efb3070f765c3f4da258",
+   "5f53be1d6c01c2611a1a2d1677f55e4ffe595569b88d8e6a782e39dffb9ca3e3",
+   "dc50c1053f302cdb9699610e54e6c5e58f40563b4a8742a267b3ce5aceb2b4d6",
+   "55b64d92dadaeee863de155e92827225538665ed2a8de0035caff0bc67af179d",
+   "0cc03ba2039ae8b850b5e4d9ef294992f0f7d1cd14a2cd0a0762230fbb2ff7c4",
+   "c43c53fdb9b7a445c429511610cf27ff219e7f8309f4976ebad5b411b2849467",
+   "1694d6bf2106779f1c82371d7672cd9b4802e5859532eee0873d8ae06485c4f8",
+   "eb887eea05b3359b46703322f152c112a71a165063ab344651ae7a2eef5cc76d",
+   "13a55cc3bc5f9d60090b64f9dcb32dd630099e1ebeffde262b9c536be6d2e51b",
+   "e7e05feca6bb68bdac1abf9a8ed7237e17e1990c9a4eaaf267aac2313ec246ea",
+   "7f170a543b2c1377ea13b831dce99cb834586ad143551e16e3df4853b85660d3",
+   "55f5f4847fc0cf52f83d855a0c15ed668a83572a7c9a44bce71ad499346fb73b"
+  ],
+  "payai": [
+   "504574b579297f18fdf1d2d6f8dd167aa614dd507b1d7f7e397753e1b243ba96",
+   "a4fc8d52215bc31198613c35267d1b14e43aa346bffe45e63a951fc79a64190f",
+   "94156c0621079d167afd9026b181ed78bceb9348e91d45d80d5f92cd89067f40",
+   "f7e202e2bfb037aa9017e3c0152acf76ea3ef17e8165bd6062d94199e5b5ce00",
+   "a98ee1a5da8c371407fdac399a7614d0de2e74863927c9d1c0a66d111c004d12",
+   "2addc67414e6fca3af04b355b05d7e43c9a029d3793d066a85d92007337ecaf0",
+   "546157a5ca6342efa8f67e6e2b51166fb06d03ac38850108816d6b12aa6d9a01",
+   "228cb33d1a7b18d15abf372458b6ca977396197d5aff549493b9b35fa04e2a43",
+   "738ed92f35209fc222b15d02bddf2cf74740f6b02ded6250621544dff9c0ae56",
+   "012b27307d2f229957ccd48cecfa89e5da22b00d09100eb5258581fd21cbe4a3",
+   "bea4a48bf803310b1e94a3dd6c463b0358d2237f5397c45b7573d2c806a389d1",
+   "acdcf0bb44c70f0c317c905925f509a0877f02951b120bdbf468b691c28ec2ba",
+   "8a0febd183ce8459e56909445a147e35493b1bfd26d82922a568fdc02b3a8957",
+   "4dbdd3649a898d5982a76d953c67fa8cd24a89dc316362e6b6e4f047419cd3d7",
+   "adf4b6e1406f91340bf1fe37a6454480df952e62df3baafcf96b25c9121848ab",
+   "a997382414b30ad3413dad18f8e881c5a24434d94c94436c67d5a76d37aaf1a5",
+   "efb6b2f119b669f97955f313b3ab837d76a38425b17f695986805195c9082e9d",
+   "2f5d7698efc5936d6bc152e05c0e2ab8e91c3791f8b51838a501b3e2a6b0ce35",
+   "0052ea2f943fa676fd355935b00c15e25d1eb61e604b30bad0aa9473517cec06",
+   "397e4343723b2d7d28111500e176b18b077f539d3ba05122d722335972bc5199",
+   "cb3735655040609b5c49f5c159ba334e0c966561de6fb296c18b335a514efe2b",
+   "f44e6e74ba36a96c557b58dbce2a8a4de9e7bf98623db992f4e175996de7bed9",
+   "4b131b30b791f0e02ecbaa8c4aeee3bb5c7b32fb562d2466bd760a572638cd0f",
+   "659702a842b7143b5cb7887abaa82a5fcb7b62ad4ee05eb7f4c18d28a08872a4",
+   "0fc6209c013dfe24859c528c7c5e879a8d2a45f768c58ad51fbd04eb0ba21547",
+   "295ef7d33703ed0ea8357e0371e382d60de4fbf7dcea04328fa8a9971654b180",
+   "a2965077054cbff26baf0ac850a02ac43d5d429189775b1350078e3f83f4e35e",
+   "970f97f2a5ece1f9819e5c01f9e3b6bd6c682d05bbb15085728c20541aee3723",
+   "46e547bb83fb847e5525df222b32e5bbed40bccdc81f5bc6dc244e92ae5c503c",
+   "7227ea6c06ea75dbf15436ed51b13e3cb3dc0583b6a2501ead68f0d34332177c",
+   "01f75383001c9d81f3f91bbca458259bb7467e0667b69e771db816bc5873e9af",
+   "8f45ad3b6d83ac8d51d1cf6367ad3a67f2560b02ba34e03ca23c44e6f3435cc7",
+   "cbe077d6e899596f17f4d7ce297c40dab65f2072593dfe4c99a4664e8f1448c2",
+   "1ae8779c2e85e363b1c8b9d300189e0d1b066721b28cb84ae17c9a43e54986bd",
+   "2059ba61f6910d69db45d0bd20233796b196b084b0f4358fddf7c2bf2b967cfc",
+   "c86e0f8e441cf23ba514793dd92a84f5f64ec2c281e7f7a68a56ff93d7eff1e7",
+   "f013f8d553d43c323b4f2781e3fab6c626e880726ef4204ecfdcaecf2122691e",
+   "1d36cb08a735bc70da8603f9d733ed4329e985a8957890ea7c633f33e02e7c30",
+   "54e6f199e350eb501ba6bf77428b09e444e70b84398a2caf7c15aeb6ea787794",
+   "1bb12dc26353b325006e7ea7147de93e62964e85c56f2bd4d45ab3d86d8f62c9"
+  ]
+ },
+ "bazaar_paging": {
+  "cdp": {
+   "pages": 40,
+   "page_size": 100,
+   "upstream_total": 115088,
+   "fetched": 4000,
+   "indexed": 4000
+  },
+  "payai": {
+   "pages": 40,
+   "page_size": 100,
+   "upstream_total": 18199,
+   "fetched": 4000,
+   "indexed": 3995
+  }
+ },
+ "declared_routes_indexed": 7966,
+ "live_surface": "work/s612/my_reading.json (captured earlier this run; no new host requests)",
+ "live_reading_sha256": "6208a8cdca555343d38c7699f0279963d99098f42987ce0fd8db241a2655497f",
+ "compared_fields": [
+  "amount_atomic",
+  "asset",
+  "network",
+  "pay_to"
+ ],
+ "tally": {
+  "AGREE": 22,
+  "DIVERGENT": 2,
+  "UNREADABLE": 0
+ },
+ "rate_denominator_excludes_unreadable": 24,
+ "rows": [
+  {
+   "resource": "https://crypto.apitoll.cloud/v1/crypto/price",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x3dA40A9aD36640a2C0F533BAC368490095574664"
+   },
+   "declared_alternatives_n": 2,
+   "live_from_challenge": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x3dA40A9aD36640a2C0F533BAC368490095574664"
+   },
+   "live_challenge_sha256": "f05a0a1895d252179d49613e286798b0960f7fa39ef59522020e48bd15a29b60",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=2 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://twitter.use.x402atlas.com/user-details",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "5000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "5000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x51D577C8CBB8b3fB1BA0CE31c7923cC27a07F78B"
+   },
+   "declared_alternatives_n": 4,
+   "live_from_challenge": {
+    "amount_atomic": "5000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "5000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x51D577C8CBB8b3fB1BA0CE31c7923cC27a07F78B"
+   },
+   "live_challenge_sha256": "6555d3c1929e1f07e7464b25986fbec9fbebc7ba073937ef3b1d3c61fdf41564",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=4 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://madeonsol.com/api/x402/kol/feed",
+   "method": "GET",
+   "bazaar": "payai",
+   "declared_by_bazaar": {
+    "amount_atomic": "5000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "5000",
+    "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+    "pay_to": "GLu63pRCYrp4BJu5P5ciYKxgeZFW9c8TJ8jWzK3TB9AR"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "5000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "5000",
+    "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+    "pay_to": "GLu63pRCYrp4BJu5P5ciYKxgeZFW9c8TJ8jWzK3TB9AR"
+   },
+   "live_challenge_sha256": "c81899aba3e7babd815aca01f793c86ca411eb1e6e583a6a89f2cf686167e99d",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://api.interzoid.com/getfullnamematch",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "10000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "10000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0xdCEca23FF8A7145e1b5B35427C9886CF21A67566"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "10000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "10000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0xdCEca23FF8A7145e1b5B35427C9886CF21A67566"
+   },
+   "live_challenge_sha256": "d0cbd2e672559fe77ba6b2fee067b7ac65eb331d6f313c7cd03dad943d55161a",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://x402.glassnode.com/v1/metrics/transactions/transfers_volume_exchanges_net",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "50000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "50000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x1f81da453901D15296c1710af83e0Bc0371D39f1"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "50000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "50000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x1f81da453901D15296c1710af83e0Bc0371D39f1"
+   },
+   "live_challenge_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://api.bentcrypto.com/v1/token/risk",
+   "method": "GET",
+   "bazaar": "payai",
+   "declared_by_bazaar": {
+    "amount_atomic": "10000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "10000",
+    "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+    "pay_to": "5bZdrGYAbHdbVCqw7RVUpxma22kJehaQCHhp4nHuHCyy"
+   },
+   "declared_alternatives_n": 2,
+   "live_from_challenge": {
+    "amount_atomic": "10000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "10000",
+    "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+    "pay_to": "5bZdrGYAbHdbVCqw7RVUpxma22kJehaQCHhp4nHuHCyy"
+   },
+   "live_challenge_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=2 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://rpc.nodeflare.app/eth/x402",
+   "method": "POST",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x9d86e0e74333b297b1d0b6ba30d2ed1b5f01f296"
+   },
+   "declared_alternatives_n": 6,
+   "live_from_challenge": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x9d86e0e74333b297b1d0b6ba30d2ed1b5f01f296"
+   },
+   "live_challenge_sha256": "78124a4d3c543749fc2dbae7f54be77f5a7bcfcbd76391519540d8c068ba2cd6",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=6 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://x402-factory.com/v1/ping",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0xCc42Ed39a06b6cF3f484307eF76B88Bf56Fb305f"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0xCc42Ed39a06b6cF3f484307eF76B88Bf56Fb305f"
+   },
+   "live_challenge_sha256": "7dc1ee93ac4b622611e0622f4823f9c4cf716edd6ee9a444f0645928b5763a07",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://mpp.hyreagent.fun/defi/tvl",
+   "method": "GET",
+   "bazaar": "payai",
+   "declared_by_bazaar": {
+    "amount_atomic": "10000",
+    "v1_maxAmountRequired": "10000",
+    "v2_amount": null,
+    "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "network": "solana",
+    "pay_to": "7G73PLhKvAPBGTzG5ESAE4coE7QrVeTTKfhTxQZbyGgC"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "10000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "10000",
+    "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+    "pay_to": "7G73PLhKvAPBGTzG5ESAE4coE7QrVeTTKfhTxQZbyGgC"
+   },
+   "live_challenge_sha256": "1e00f3032d09414a96dcd0481ccc0445eeb53700b2882f7c93374574a2d18ca7",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "NOTATION",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0",
+    "NETWORK_NOTATION_DIFFERS_SAME_CHAIN"
+   ]
+  },
+  {
+   "resource": "https://google-trends.use.x402atlas.com/trend",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "50000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "50000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x9AACeabAD8E1858b72fcEA1665381B168841b2fa"
+   },
+   "declared_alternatives_n": 4,
+   "live_from_challenge": {
+    "amount_atomic": "50000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "50000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x9AACeabAD8E1858b72fcEA1665381B168841b2fa"
+   },
+   "live_challenge_sha256": "5b47be3875bb7f0d9d8243c425cb9ec2a6c78a822548f6fc900060b9ccdff3b8",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=4 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://api.gondola-ai.com/v1/chat/completions",
+   "method": "POST",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "10000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "10000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x8180A3CB090815D50dE7D786fA98f4a908E70cD0"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "10000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "10000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x8180A3CB090815D50dE7D786fA98f4a908E70cD0"
+   },
+   "live_challenge_sha256": "00072e4b25773d8a8106abaa0de9d81db998a8bca6ca7214e6ec7d3bfde6b344",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://glim.sh/api/v1/web/fetch",
+   "method": "POST",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+    "pay_to": "9MkM5Ra48KFcSv9HDQ8sb3C3r5HjouEwGQ6sp1cx1vde"
+   },
+   "declared_alternatives_n": 3,
+   "live_from_challenge": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+    "pay_to": "9MkM5Ra48KFcSv9HDQ8sb3C3r5HjouEwGQ6sp1cx1vde"
+   },
+   "live_challenge_sha256": "4bc101c5a528d7e1290d0481235e83ef43be5444bdf8b632b6876b2235f5ad92",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=3 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://api.eckari.com/v1/companies/us/resolve",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x9d6b6fdB04040a55d58B24ff4C90C08cf6083C8f"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x9d6b6fdB04040a55d58B24ff4C90C08cf6083C8f"
+   },
+   "live_challenge_sha256": "6007c6b73c08199a1b49f07c2b9f408a41741c7c065b6ddd8767f0a2ca5695af",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://x402-crypto-data.vercel.app/api/yields",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x23c920649F148bD253583f140f540797b312dB35"
+   },
+   "declared_alternatives_n": 2,
+   "live_from_challenge": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x23c920649F148bD253583f140f540797b312dB35"
+   },
+   "live_challenge_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=2 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://x402.aispace.bot/api/v1/video/queue",
+   "method": "POST",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "650000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "650000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0xA7f3Ad0E69F61864092FAbBa6Cee00AF6e584689"
+   },
+   "declared_alternatives_n": 2,
+   "live_from_challenge": {
+    "amount_atomic": "10000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "10000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0xA7f3Ad0E69F61864092FAbBa6Cee00AF6e584689"
+   },
+   "live_challenge_sha256": "2c0de046e8b3a467e7301b6d9a97f71b22007fb67a127ba1d7e86eca6e787b36",
+   "comparison": {
+    "amount_atomic": "DIFFERS",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "DIVERGENT",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=2 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://www.trezalabs.com/api/x402/speech",
+   "method": "POST",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "40000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "40000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0xaE393a9CD728F7397F50f6f8C88096a0F3D2b42C"
+   },
+   "declared_alternatives_n": 2,
+   "live_from_challenge": {
+    "amount_atomic": "20000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "20000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0xaE393a9CD728F7397F50f6f8C88096a0F3D2b42C"
+   },
+   "live_challenge_sha256": "2f3b33a763925d043692b9b18676966804d65ce04b451ce3c34f57cd9b677acc",
+   "comparison": {
+    "amount_atomic": "DIFFERS",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "DIVERGENT",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=2 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://api.clawfetch.ai/fetch",
+   "method": "POST",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0xc2afB91833f4dE19542A025872C6085cC29185eB"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0xc2afB91833f4dE19542A025872C6085cC29185eB"
+   },
+   "live_challenge_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://vibesprings.net/api/price/btc-usd",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x38C063312719220c676E988f0DEE14B4ec0e44C8"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x38C063312719220c676E988f0DEE14B4ec0e44C8"
+   },
+   "live_challenge_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://api.reloadpi.com/api/catalog/vouchers/brands",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x8a598A28a435Fe44D31854251b1c88d0781ea822"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x8a598A28a435Fe44D31854251b1c88d0781ea822"
+   },
+   "live_challenge_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://search.cyberwarex.com/news",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x058D0Cc5CC97e61e8A9f38D6d6365bce525921B2"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x058D0Cc5CC97e61e8A9f38D6d6365bce525921B2"
+   },
+   "live_challenge_sha256": "1c0fe4b4ce32cf323f440ccd97ca607c5c5cc89b63daf3765a5519e9f8e405bf",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://kaisha-api.hp-vladic.workers.dev/calendar/business-days",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0xF2A6416EBb0C594Ab2977695bED061729ddEb47b"
+   },
+   "declared_alternatives_n": 2,
+   "live_from_challenge": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0xF2A6416EBb0C594Ab2977695bED061729ddEb47b"
+   },
+   "live_challenge_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=2 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://api.hyperextend.xyz/v1/candles/BTC/1m/latest",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x548fC289526ab2F0391D562a723cdA64Bbf1abc4"
+   },
+   "declared_alternatives_n": 3,
+   "live_from_challenge": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x548fC289526ab2F0391D562a723cdA64Bbf1abc4"
+   },
+   "live_challenge_sha256": "c74c10c973e9f47c64c81ce12a6a94a73f17da542d67d9836c682a0bdaa5b9f2",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=3 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://base-gas-x402-production.up.railway.app/gas",
+   "method": "GET",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x0D083590c048A243e24a75E3a7C968145DE25B44"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "2000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "2000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x0D083590c048A243e24a75E3a7C968145DE25B44"
+   },
+   "live_challenge_sha256": "b8ac916c30e3a2120f046249254ae3861bf4768f2e5f0ff9b8a521933c8cd681",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0"
+   ]
+  },
+  {
+   "resource": "https://767-2676.com/v2/receipt",
+   "method": "POST",
+   "bazaar": "cdp",
+   "declared_by_bazaar": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x5f5a631e975183d084f60d7121e967b30ec83cb8"
+   },
+   "declared_alternatives_n": 1,
+   "live_from_challenge": {
+    "amount_atomic": "1000",
+    "v1_maxAmountRequired": null,
+    "v2_amount": "1000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "network": "eip155:8453",
+    "pay_to": "0x5f5a631e975183d084f60d7121e967b30ec83cb8"
+   },
+   "live_challenge_sha256": "ae2e7dbb89f98a90444f277237badd5de51869ce1a08dddad30d47ebe4c8caf8",
+   "comparison": {
+    "amount_atomic": "EQUAL",
+    "asset": "EQUAL",
+    "network": "EQUAL",
+    "pay_to": "EQUAL"
+   },
+   "verdict": "AGREE",
+   "notes": [
+    "BAZAAR_ALTERNATIVES=1 MATCHED_INDEX=0"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3533 @@
+{
+  "schema": 1,
+  "generated_at": "2026-11-05T20:21:46Z",
+  "population": {
+    "snapshot_captured_at": "2026-11-05T20:06:14Z",
+    "max_items_per_feed": 3000,
+    "rows_fetched": 6016,
+    "rows_without_resource": 0,
+    "rows_dropped_delist_honor_list": 0,
+    "routes_after_dedupe_on_method_resource": 5994,
+    "per_source": {
+      "cdp": {
+        "error": null,
+        "fetched": 3000,
+        "upstream_total": 36290
+      },
+      "payai": {
+        "error": null,
+        "fetched": 3000,
+        "upstream_total": 18183
+      },
+      "quietforge": {
+        "error": null,
+        "fetched": 16,
+        "upstream_total": 16
+      }
+    },
+    "upstream_declared_total_sum": 54489,
+    "share_of_declared": 0.110408,
+    "statement": "These are the first 3000 rows of each public discovery feed in the order the feed returned them, plus our own manifest: 6016 rows, 5994 routes after dedupe, 11.0% of the 54489 rows the feeds themselves declare. Every count below is a count IN THIS PREFIX and is not a count of the feed."
+  },
+  "options": {
+    "n_options_total": 11719,
+    "scheme_value_census": {
+      "exact": 11137,
+      "batch-settlement": 483,
+      "upto": 88,
+      "long-events-stable-txhash": 6,
+      "aggr_deferred": 3,
+      "long-events-txhash": 2
+    },
+    "scheme_class_census": {
+      "str": 11719
+    }
+  },
+  "routes": {
+    "scheme_n_distribution": {
+      "1": 5895,
+      "2": 97,
+      "3": 2
+    },
+    "routes_with_unreadable_accepts": 0,
+    "routes_with_multiple_schemes": 99,
+    "hosts_with_multiple_schemes": [
+      "agent402.tools",
+      "api.3route.io",
+      "api.hyperextend.xyz",
+      "api.onesource.io",
+      "api.surplusintelligence.ai",
+      "api.vaults.fyi",
+      "govspendpulse.theaslangroupllc.com",
+      "long.events",
+      "mcp.barker.money",
+      "rpc.nodeflare.app",
+      "sol.blockrun.ai",
+      "x402.api.browser-use.com",
+      "x402.ochinimus.app",
+      "x402.telnyx.com",
+      "x402tap.com"
+    ],
+    "routes_with_scheme_tie": 66,
+    "routes_with_silent_scheme_tie": 43,
+    "pay_basis_distribution": {
+      "single": 4311,
+      "tied_min_positional": 1636,
+      "priced_unique": 47
+    }
+  },
+  "detail": {
+    "multi_scheme_routes": [
+      {
+        "id": "84754e423850d66e",
+        "resource": "https://api.onesource.io/api/chain/erc20-balance",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "294c893dd42b2fa5",
+        "resource": "https://api.onesource.io/api/chain/block-number",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "005b6f92973b0515",
+        "resource": "https://api.onesource.io/api/chain/live-balance",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "3319ce4128bf9850",
+        "resource": "https://api.onesource.io/api/chain/contract/:address",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "d12022e7cbc2bd40",
+        "resource": "https://api.onesource.io/api/chain/erc20-transfers",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "440309ce7440e416",
+        "resource": "https://api.onesource.io/api/chain/total-supply",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "e273b8b91cf60ce9",
+        "resource": "https://api.onesource.io/api/chain/ens/:input",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "7aaa150f700d6096",
+        "resource": "https://api.onesource.io/api/chain/nonce/:address",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "44e526a89397cec1",
+        "resource": "https://api.onesource.io/api/chain/block/:number",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "06eaaf776255b979",
+        "resource": "https://api.onesource.io/api/chain/network-info",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "80a128a3bb6ebf04",
+        "resource": "https://api.onesource.io/api/chain/tx/:hash",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "f6bf353caa51b699",
+        "resource": "https://api.onesource.io/api/chain/events",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "ec189ade0d6d35c9",
+        "resource": "https://api.hyperextend.xyz/v1/candles/BTC/1m/latest",
+        "method": "GET",
+        "host": "api.hyperextend.xyz",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 3,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "4c789885b0c422d2",
+        "resource": "https://api.onesource.io/api/chain/erc721-tokens",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "9f316a0bc037a4e8",
+        "resource": "https://api.onesource.io/api/chain/nft-metadata",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "6e84bb38e81dc788",
+        "resource": "https://api.onesource.io/api/chain/code/:address",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "7a6075ceb4904197",
+        "resource": "https://api.onesource.io/api/chain/receipt/:hash",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "a78886e9bde20381",
+        "resource": "https://api.onesource.io/api/chain/chain-id",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "9fc7cb823e62b29d",
+        "resource": "https://api.onesource.io/api/chain/allowance",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "261788bade7ef0d9",
+        "resource": "https://api.onesource.io/api/chain/call",
+        "method": "POST",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "1d35ff34afb22183",
+        "resource": "https://api.onesource.io/api/chain/estimate-gas",
+        "method": "POST",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "437920847b5aeb7a",
+        "resource": "https://rpc.nodeflare.app/base/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "7536e7cb541d7f3d",
+        "resource": "https://api.onesource.io/api/chain/nft-owner",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "41d2eb88bda47ad3",
+        "resource": "https://api.onesource.io/api/chain/erc1155-balance",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "0b311f2f77be0e3c",
+        "resource": "https://api.onesource.io/api/chain/storage",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "3e038174052e92a7",
+        "resource": "https://x402.telnyx.com/v1/chat/completions/_t/llama-3.1-8b",
+        "method": "POST",
+        "host": "x402.telnyx.com",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 2,
+        "pay_basis": "priced_unique"
+      },
+      {
+        "id": "44b0a843f91ada6d",
+        "resource": "https://api.onesource.io/api/chain/proxy/:address",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "acf7d2aaba41c419",
+        "resource": "https://x402tap.com/api/ping",
+        "method": "GET",
+        "host": "x402tap.com",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "a809580cd267f422",
+        "resource": "https://rpc.nodeflare.app/arb/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "be55e20e369bfa79",
+        "resource": "https://rpc.nodeflare.app/op/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "67d35319c39c0d9c",
+        "resource": "https://rpc.nodeflare.app/eth/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "f881b8a0e35c1904",
+        "resource": "https://rpc.nodeflare.app/bnb/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "7d95d402af4af81e",
+        "resource": "https://rpc.nodeflare.app/polygon/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "62f240f33681d341",
+        "resource": "https://api.surplusintelligence.ai/v1/chat/completions",
+        "method": "POST",
+        "host": "api.surplusintelligence.ai",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "5bee754f8141aa31",
+        "resource": "https://api.onesource.io/api/chain/pending",
+        "method": "GET",
+        "host": "api.onesource.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "018d2a9c9b7af6fe",
+        "resource": "https://rpc.nodeflare.app/robinhood/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "c1924d6c9e03c434",
+        "resource": "https://rpc.nodeflare.app/zircuit/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "40b605be71546041",
+        "resource": "https://rpc.nodeflare.app/hl/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "80d79f6be42c987a",
+        "resource": "https://x402.telnyx.com/v1/chat/completions/_t/gemma-4-26b",
+        "method": "POST",
+        "host": "x402.telnyx.com",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 2,
+        "pay_basis": "priced_unique"
+      },
+      {
+        "id": "1f66f701e678cbab",
+        "resource": "https://api.vaults.fyi/v2/vaults",
+        "method": "GET",
+        "host": "api.vaults.fyi",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "9bf01e542420956d",
+        "resource": "https://rpc.nodeflare.app/unichain/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "ed584d0d805aa7ca",
+        "resource": "https://x402.ochinimus.app/api/price",
+        "method": "GET",
+        "host": "x402.ochinimus.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 12,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "888fa1aa8d390b02",
+        "resource": "https://api.vaults.fyi/v2/curators",
+        "method": "GET",
+        "host": "api.vaults.fyi",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "f2f82e8a0be62d0d",
+        "resource": "https://api.hyperextend.xyz/v1/asset_ctx/BTC/latest",
+        "method": "GET",
+        "host": "api.hyperextend.xyz",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 3,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "c09056ce1f0628a5",
+        "resource": "https://api.vaults.fyi/v2/networks",
+        "method": "GET",
+        "host": "api.vaults.fyi",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "8fc034ed6aaa3df9",
+        "resource": "https://agent402.tools/api/demand-radar",
+        "method": "GET",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "3a025a8546737e9c",
+        "resource": "https://agent402.tools/api/perp-funding",
+        "method": "POST",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "79c5ff60d977d2e2",
+        "resource": "https://rpc.nodeflare.app/data/balances/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "fbb7b95630c3ccc8",
+        "resource": "https://api.hyperextend.xyz/v1/outcome_ctx/%231000/latest",
+        "method": "GET",
+        "host": "api.hyperextend.xyz",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 3,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "3a02f69f70fa2073",
+        "resource": "https://agent402.tools/api/crypto-price",
+        "method": "GET",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "0ae9322d27b21a43",
+        "resource": "https://api.vaults.fyi/v2/tags",
+        "method": "GET",
+        "host": "api.vaults.fyi",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "72e9dd79d43f35ef",
+        "resource": "https://x402.ochinimus.app/api/eth-price",
+        "method": "GET",
+        "host": "x402.ochinimus.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 12,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "f4801a883eeb66fc",
+        "resource": "https://api.vaults.fyi/v2/assets",
+        "method": "GET",
+        "host": "api.vaults.fyi",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "14ddafd2c9d56740",
+        "resource": "https://rpc.nodeflare.app/avax/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "ca20bb7dac60deac",
+        "resource": "https://rpc.nodeflare.app/data/token-safety/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "a74d3b5c5befdefd",
+        "resource": "https://agent402.tools/v1/metered/chat/completions",
+        "method": "POST",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "6e5c912dfdfb60bf",
+        "resource": "https://agent402.tools/api/hash",
+        "method": "POST",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp",
+          "payai"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "884ee0a840e2fe28",
+        "resource": "https://api.3route.io/v1/:chainId/quote",
+        "method": "GET",
+        "host": "api.3route.io",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 4,
+        "pay_basis": "priced_unique"
+      },
+      {
+        "id": "8463a36a75a7d805",
+        "resource": "https://agent402.tools/api/perp-basis",
+        "method": "POST",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "ef23fc12bd6d2267",
+        "resource": "https://api.hyperextend.xyz/v1/outcome/100/oi",
+        "method": "GET",
+        "host": "api.hyperextend.xyz",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 3,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "61a052f6e1e9af6f",
+        "resource": "https://rpc.nodeflare.app/sonic/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "42692343eb903449",
+        "resource": "https://rpc.nodeflare.app/xlayer/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "6f23d369b019e6b1",
+        "resource": "https://x402.ochinimus.app/api/sol-price",
+        "method": "GET",
+        "host": "x402.ochinimus.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 12,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "09d3878b011f402a",
+        "resource": "https://mcp.barker.money/barker_defi_vaults",
+        "method": "GET",
+        "host": "mcp.barker.money",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "aggr_deferred"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "5b622ccea2e412ed",
+        "resource": "https://api.vaults.fyi/v2/portfolio/positions/:userAddress",
+        "method": "GET",
+        "host": "api.vaults.fyi",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "b4345b364ab03ccc",
+        "resource": "https://agent402.tools/api/bestsellers",
+        "method": "GET",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "e5bccf7ef7531249",
+        "resource": "https://x402.ochinimus.app/api/btc-price",
+        "method": "GET",
+        "host": "x402.ochinimus.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 12,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "21405fbb4033b590",
+        "resource": "https://agent402.tools/api/route/execute",
+        "method": "POST",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 14,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "fbef4b6a33edc8ec",
+        "resource": "https://x402.api.browser-use.com/api/v3/sessions",
+        "method": "POST",
+        "host": "x402.api.browser-use.com",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 3,
+        "pay_basis": "priced_unique"
+      },
+      {
+        "id": "f733a86261eccbb5",
+        "resource": "https://agent402.tools/api/crypto-trending",
+        "method": "GET",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "fb72480493c10544",
+        "resource": "https://rpc.nodeflare.app/ink/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "caf9c95bf5420fac",
+        "resource": "https://rpc.nodeflare.app/mode/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "c39f717596f49471",
+        "resource": "https://rpc.nodeflare.app/bob/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "54bf0d474a41a19e",
+        "resource": "https://api.hyperextend.xyz/v1/candles/BTC/1m",
+        "method": "GET",
+        "host": "api.hyperextend.xyz",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 3,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "c14bfc013cd44979",
+        "resource": "https://agent402.tools/api/stablecoin-peg",
+        "method": "GET",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "de2180d82026768a",
+        "resource": "https://agent402.tools/api/block-number",
+        "method": "GET",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "9167af4d9a4020c8",
+        "resource": "https://mcp.barker.money/barker_market_trend",
+        "method": "GET",
+        "host": "mcp.barker.money",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "aggr_deferred"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "5649962b86fa856d",
+        "resource": "https://mcp.barker.money/barker_market_overview",
+        "method": "GET",
+        "host": "mcp.barker.money",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "aggr_deferred"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "ac817ff4bcc382d6",
+        "resource": "https://agent402.tools/api/gas-estimate",
+        "method": "GET",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "5bcd0c4e64a0cc82",
+        "resource": "https://api.vaults.fyi/v2/historical/:network/:vaultId/apy",
+        "method": "GET",
+        "host": "api.vaults.fyi",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "upto",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "3a90d4dc6b053813",
+        "resource": "https://agent402.tools/api/onchain-sql",
+        "method": "POST",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "45f5d47d0abc3956",
+        "resource": "https://x402.ochinimus.app/api/funding-rate",
+        "method": "GET",
+        "host": "x402.ochinimus.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 13,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "db09eeb05249fe3f",
+        "resource": "https://agent402.tools/api/search",
+        "method": "GET",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "9d2bdd9851897d23",
+        "resource": "https://agent402.tools/api/block-info",
+        "method": "GET",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "5d6f950799a0735f",
+        "resource": "https://agent402.tools/api/weather-history",
+        "method": "GET",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "7b758241dd3cc4d7",
+        "resource": "https://agent402.tools/api/stock-quote",
+        "method": "GET",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "a9e3cf3730169142",
+        "resource": "https://agent402.tools/api/timezone-convert",
+        "method": "GET",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "0b1a3f0b6a3f9d31",
+        "resource": "https://api.vaults.fyi/v2/detailed-vaults",
+        "method": "GET",
+        "host": "api.vaults.fyi",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 2,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "81a9ed50b1f0f476",
+        "resource": "https://x402.ochinimus.app/api/liquidations",
+        "method": "GET",
+        "host": "x402.ochinimus.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 13,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "0aceb8bc939a54b8",
+        "resource": "https://x402.ochinimus.app/api/base-gas",
+        "method": "GET",
+        "host": "x402.ochinimus.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 13,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "39dd82a6794b0a91",
+        "resource": "https://api.hyperextend.xyz/v1/outcome_ctx/%231000",
+        "method": "GET",
+        "host": "api.hyperextend.xyz",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 3,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "a53148caf81d3764",
+        "resource": "https://api.hyperextend.xyz/v1/asset_ctx/BTC",
+        "method": "GET",
+        "host": "api.hyperextend.xyz",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 3,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "5412c0c0f606f6fc",
+        "resource": "https://govspendpulse.theaslangroupllc.com/api/govspend/us-contracts",
+        "method": "GET",
+        "host": "govspendpulse.theaslangroupllc.com",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 14,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "c09e89da02791dea",
+        "resource": "https://rpc.nodeflare.app/soneium/x402",
+        "method": "POST",
+        "host": "rpc.nodeflare.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 6,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "86e5108c2991827f",
+        "resource": "https://x402.ochinimus.app/api/liquidation-stats",
+        "method": "GET",
+        "host": "x402.ochinimus.app",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 12,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "8038b8719548fd33",
+        "resource": "https://agent402.tools/api/render",
+        "method": "POST",
+        "host": "agent402.tools",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "upto"
+        ],
+        "n_options": 16,
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "d05e2568b5b9b74d",
+        "resource": "https://long.events/functions/v1/api-events",
+        "method": "GET",
+        "host": "long.events",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 3,
+        "schemes": [
+          "exact",
+          "long-events-stable-txhash",
+          "long-events-txhash"
+        ],
+        "n_options": 5,
+        "pay_basis": "priced_unique"
+      },
+      {
+        "id": "f61dcf4ad7a47ca3",
+        "resource": "https://long.events/functions/v1/api-event-weeks",
+        "method": "GET",
+        "host": "long.events",
+        "sources": [
+          "cdp"
+        ],
+        "scheme_n": 3,
+        "schemes": [
+          "exact",
+          "long-events-stable-txhash",
+          "long-events-txhash"
+        ],
+        "n_options": 5,
+        "pay_basis": "priced_unique"
+      },
+      {
+        "id": "38ef9e3fdaf66811",
+        "resource": "https://sol.blockrun.ai/api/v1/chat/completions",
+        "method": "POST",
+        "host": "sol.blockrun.ai",
+        "sources": [
+          "payai"
+        ],
+        "scheme_n": 2,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ],
+        "n_options": 418,
+        "pay_basis": "tied_min_positional"
+      }
+    ],
+    "scheme_tie_routes": [
+      {
+        "id": "84754e423850d66e",
+        "resource": "https://api.onesource.io/api/chain/erc20-balance",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "3000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "294c893dd42b2fa5",
+        "resource": "https://api.onesource.io/api/chain/block-number",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "005b6f92973b0515",
+        "resource": "https://api.onesource.io/api/chain/live-balance",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "3000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "3319ce4128bf9850",
+        "resource": "https://api.onesource.io/api/chain/contract/:address",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "5000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "d12022e7cbc2bd40",
+        "resource": "https://api.onesource.io/api/chain/erc20-transfers",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "5000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "440309ce7440e416",
+        "resource": "https://api.onesource.io/api/chain/total-supply",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "3000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "e273b8b91cf60ce9",
+        "resource": "https://api.onesource.io/api/chain/ens/:input",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "5000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "7aaa150f700d6096",
+        "resource": "https://api.onesource.io/api/chain/nonce/:address",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "3000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "44e526a89397cec1",
+        "resource": "https://api.onesource.io/api/chain/block/:number",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "3000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "06eaaf776255b979",
+        "resource": "https://api.onesource.io/api/chain/network-info",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "80a128a3bb6ebf04",
+        "resource": "https://api.onesource.io/api/chain/tx/:hash",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "8000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "f6bf353caa51b699",
+        "resource": "https://api.onesource.io/api/chain/events",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "5000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "ec189ade0d6d35c9",
+        "resource": "https://api.hyperextend.xyz/v1/candles/BTC/1m/latest",
+        "host": "api.hyperextend.xyz",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x548fC289526ab2F0391D562a723cdA64Bbf1abc4",
+              "2000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "4c789885b0c422d2",
+        "resource": "https://api.onesource.io/api/chain/erc721-tokens",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "8000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "9f316a0bc037a4e8",
+        "resource": "https://api.onesource.io/api/chain/nft-metadata",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "8000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "6e84bb38e81dc788",
+        "resource": "https://api.onesource.io/api/chain/code/:address",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "3000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "7a6075ceb4904197",
+        "resource": "https://api.onesource.io/api/chain/receipt/:hash",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "5000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "a78886e9bde20381",
+        "resource": "https://api.onesource.io/api/chain/chain-id",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "9fc7cb823e62b29d",
+        "resource": "https://api.onesource.io/api/chain/allowance",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "3000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "261788bade7ef0d9",
+        "resource": "https://api.onesource.io/api/chain/call",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "5000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "1d35ff34afb22183",
+        "resource": "https://api.onesource.io/api/chain/estimate-gas",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "4000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "7536e7cb541d7f3d",
+        "resource": "https://api.onesource.io/api/chain/nft-owner",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "3000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "41d2eb88bda47ad3",
+        "resource": "https://api.onesource.io/api/chain/erc1155-balance",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "3000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "0b311f2f77be0e3c",
+        "resource": "https://api.onesource.io/api/chain/storage",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "5000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "44b0a843f91ada6d",
+        "resource": "https://api.onesource.io/api/chain/proxy/:address",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "5000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "acf7d2aaba41c419",
+        "resource": "https://x402tap.com/api/ping",
+        "host": "x402tap.com",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xB810B599bc730Aa85800BABe7f5d160524322C86",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "62f240f33681d341",
+        "resource": "https://api.surplusintelligence.ai/v1/chat/completions",
+        "host": "api.surplusintelligence.ai",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x0F99fc0CBD7A114b2DA171FDa5A0167858f7afC2",
+              "3302"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "5bee754f8141aa31",
+        "resource": "https://api.onesource.io/api/chain/pending",
+        "host": "api.onesource.io",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x52E29e0d2Aa49bfBfC548C0A9F2196F4aa51f3ea",
+              "10000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "1f66f701e678cbab",
+        "resource": "https://api.vaults.fyi/v2/vaults",
+        "host": "api.vaults.fyi",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x108BCd8a07C3fdfca3Aa500784A8573123a1029F",
+              "2000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "888fa1aa8d390b02",
+        "resource": "https://api.vaults.fyi/v2/curators",
+        "host": "api.vaults.fyi",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x108BCd8a07C3fdfca3Aa500784A8573123a1029F",
+              "2000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "f2f82e8a0be62d0d",
+        "resource": "https://api.hyperextend.xyz/v1/asset_ctx/BTC/latest",
+        "host": "api.hyperextend.xyz",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x548fC289526ab2F0391D562a723cdA64Bbf1abc4",
+              "3500"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "c09056ce1f0628a5",
+        "resource": "https://api.vaults.fyi/v2/networks",
+        "host": "api.vaults.fyi",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x108BCd8a07C3fdfca3Aa500784A8573123a1029F",
+              "2000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "8fc034ed6aaa3df9",
+        "resource": "https://agent402.tools/api/demand-radar",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "5000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "3a025a8546737e9c",
+        "resource": "https://agent402.tools/api/perp-funding",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "2000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "fbb7b95630c3ccc8",
+        "resource": "https://api.hyperextend.xyz/v1/outcome_ctx/%231000/latest",
+        "host": "api.hyperextend.xyz",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x548fC289526ab2F0391D562a723cdA64Bbf1abc4",
+              "3475"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "3a02f69f70fa2073",
+        "resource": "https://agent402.tools/api/crypto-price",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "0ae9322d27b21a43",
+        "resource": "https://api.vaults.fyi/v2/tags",
+        "host": "api.vaults.fyi",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x108BCd8a07C3fdfca3Aa500784A8573123a1029F",
+              "2000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "f4801a883eeb66fc",
+        "resource": "https://api.vaults.fyi/v2/assets",
+        "host": "api.vaults.fyi",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x108BCd8a07C3fdfca3Aa500784A8573123a1029F",
+              "2000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "a74d3b5c5befdefd",
+        "resource": "https://agent402.tools/v1/metered/chat/completions",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "6e5c912dfdfb60bf",
+        "resource": "https://agent402.tools/api/hash",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "8463a36a75a7d805",
+        "resource": "https://agent402.tools/api/perp-basis",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "2000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "ef23fc12bd6d2267",
+        "resource": "https://api.hyperextend.xyz/v1/outcome/100/oi",
+        "host": "api.hyperextend.xyz",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x548fC289526ab2F0391D562a723cdA64Bbf1abc4",
+              "125725"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "09d3878b011f402a",
+        "resource": "https://mcp.barker.money/barker_defi_vaults",
+        "host": "mcp.barker.money",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:196",
+              "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+              "0x1a53ab9f9182d4054fadf385ebfcc53b2902dcc4",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "aggr_deferred"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "5b622ccea2e412ed",
+        "resource": "https://api.vaults.fyi/v2/portfolio/positions/:userAddress",
+        "host": "api.vaults.fyi",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x108BCd8a07C3fdfca3Aa500784A8573123a1029F",
+              "10000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "b4345b364ab03ccc",
+        "resource": "https://agent402.tools/api/bestsellers",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "5000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "21405fbb4033b590",
+        "resource": "https://agent402.tools/api/route/execute",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x77065d81e18ad403BCD6e9A0616b288e16744121",
+              "10000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "f733a86261eccbb5",
+        "resource": "https://agent402.tools/api/crypto-trending",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "54bf0d474a41a19e",
+        "resource": "https://api.hyperextend.xyz/v1/candles/BTC/1m",
+        "host": "api.hyperextend.xyz",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x548fC289526ab2F0391D562a723cdA64Bbf1abc4",
+              "50960"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "c14bfc013cd44979",
+        "resource": "https://agent402.tools/api/stablecoin-peg",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "3000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "de2180d82026768a",
+        "resource": "https://agent402.tools/api/block-number",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "9167af4d9a4020c8",
+        "resource": "https://mcp.barker.money/barker_market_trend",
+        "host": "mcp.barker.money",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:196",
+              "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+              "0x1a53ab9f9182d4054fadf385ebfcc53b2902dcc4",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "aggr_deferred"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "5649962b86fa856d",
+        "resource": "https://mcp.barker.money/barker_market_overview",
+        "host": "mcp.barker.money",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:196",
+              "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+              "0x1a53ab9f9182d4054fadf385ebfcc53b2902dcc4",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "aggr_deferred"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "ac817ff4bcc382d6",
+        "resource": "https://agent402.tools/api/gas-estimate",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "5bcd0c4e64a0cc82",
+        "resource": "https://api.vaults.fyi/v2/historical/:network/:vaultId/apy",
+        "host": "api.vaults.fyi",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x108BCd8a07C3fdfca3Aa500784A8573123a1029F",
+              "102000"
+            ],
+            "schemes": [
+              "upto",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "3a90d4dc6b053813",
+        "resource": "https://agent402.tools/api/onchain-sql",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "40000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "db09eeb05249fe3f",
+        "resource": "https://agent402.tools/api/search",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "10000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "9d2bdd9851897d23",
+        "resource": "https://agent402.tools/api/block-info",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "5d6f950799a0735f",
+        "resource": "https://agent402.tools/api/weather-history",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "2000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "7b758241dd3cc4d7",
+        "resource": "https://agent402.tools/api/stock-quote",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "a9e3cf3730169142",
+        "resource": "https://agent402.tools/api/timezone-convert",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "0b1a3f0b6a3f9d31",
+        "resource": "https://api.vaults.fyi/v2/detailed-vaults",
+        "host": "api.vaults.fyi",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x108BCd8a07C3fdfca3Aa500784A8573123a1029F",
+              "302000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "39dd82a6794b0a91",
+        "resource": "https://api.hyperextend.xyz/v1/outcome_ctx/%231000",
+        "host": "api.hyperextend.xyz",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x548fC289526ab2F0391D562a723cdA64Bbf1abc4",
+              "125800"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "a53148caf81d3764",
+        "resource": "https://api.hyperextend.xyz/v1/asset_ctx/BTC",
+        "host": "api.hyperextend.xyz",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x548fC289526ab2F0391D562a723cdA64Bbf1abc4",
+              "123475"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 2
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "5412c0c0f606f6fc",
+        "resource": "https://govspendpulse.theaslangroupllc.com/api/govspend/us-contracts",
+        "host": "govspendpulse.theaslangroupllc.com",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0x50ab2018c06c6E4eAA9BA52057Eb55eD284912fc",
+              "80000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "8038b8719548fd33",
+        "resource": "https://agent402.tools/api/render",
+        "host": "agent402.tools",
+        "groups": [
+          {
+            "tie_key": [
+              "eip155:8453",
+              "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "0xaBF4FAbd7c416fB67202E5f9002389Fc75e2a9D0",
+              "10000"
+            ],
+            "schemes": [
+              "exact",
+              "upto"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      },
+      {
+        "id": "38ef9e3fdaf66811",
+        "resource": "https://sol.blockrun.ai/api/v1/chat/completions",
+        "host": "sol.blockrun.ai",
+        "groups": [
+          {
+            "tie_key": [
+              "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+              "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "AQqnMFBwGZEoti85aTVRy8XYpKrho7GaMDx9ZB3CEeKA",
+              "1000"
+            ],
+            "schemes": [
+              "exact",
+              "batch-settlement"
+            ],
+            "n_options": 3
+          }
+        ],
+        "pay_basis": "tied_min_positional"
+      }
+    ],
+    "silent_scheme_tie_routes": [
+      {
+        "id": "84754e423850d66e",
+        "resource": "https://api.onesource.io/api/chain/erc20-balance",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "294c893dd42b2fa5",
+        "resource": "https://api.onesource.io/api/chain/block-number",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "005b6f92973b0515",
+        "resource": "https://api.onesource.io/api/chain/live-balance",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "3319ce4128bf9850",
+        "resource": "https://api.onesource.io/api/chain/contract/:address",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "d12022e7cbc2bd40",
+        "resource": "https://api.onesource.io/api/chain/erc20-transfers",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "440309ce7440e416",
+        "resource": "https://api.onesource.io/api/chain/total-supply",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "e273b8b91cf60ce9",
+        "resource": "https://api.onesource.io/api/chain/ens/:input",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "7aaa150f700d6096",
+        "resource": "https://api.onesource.io/api/chain/nonce/:address",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "44e526a89397cec1",
+        "resource": "https://api.onesource.io/api/chain/block/:number",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "06eaaf776255b979",
+        "resource": "https://api.onesource.io/api/chain/network-info",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "80a128a3bb6ebf04",
+        "resource": "https://api.onesource.io/api/chain/tx/:hash",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "f6bf353caa51b699",
+        "resource": "https://api.onesource.io/api/chain/events",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "ec189ade0d6d35c9",
+        "resource": "https://api.hyperextend.xyz/v1/candles/BTC/1m/latest",
+        "host": "api.hyperextend.xyz",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "4c789885b0c422d2",
+        "resource": "https://api.onesource.io/api/chain/erc721-tokens",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "9f316a0bc037a4e8",
+        "resource": "https://api.onesource.io/api/chain/nft-metadata",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "6e84bb38e81dc788",
+        "resource": "https://api.onesource.io/api/chain/code/:address",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "7a6075ceb4904197",
+        "resource": "https://api.onesource.io/api/chain/receipt/:hash",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "a78886e9bde20381",
+        "resource": "https://api.onesource.io/api/chain/chain-id",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "9fc7cb823e62b29d",
+        "resource": "https://api.onesource.io/api/chain/allowance",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "261788bade7ef0d9",
+        "resource": "https://api.onesource.io/api/chain/call",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "1d35ff34afb22183",
+        "resource": "https://api.onesource.io/api/chain/estimate-gas",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "7536e7cb541d7f3d",
+        "resource": "https://api.onesource.io/api/chain/nft-owner",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "41d2eb88bda47ad3",
+        "resource": "https://api.onesource.io/api/chain/erc1155-balance",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "0b311f2f77be0e3c",
+        "resource": "https://api.onesource.io/api/chain/storage",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "44b0a843f91ada6d",
+        "resource": "https://api.onesource.io/api/chain/proxy/:address",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "acf7d2aaba41c419",
+        "resource": "https://x402tap.com/api/ping",
+        "host": "x402tap.com",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "62f240f33681d341",
+        "resource": "https://api.surplusintelligence.ai/v1/chat/completions",
+        "host": "api.surplusintelligence.ai",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "upto"
+        ]
+      },
+      {
+        "id": "5bee754f8141aa31",
+        "resource": "https://api.onesource.io/api/chain/pending",
+        "host": "api.onesource.io",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "1f66f701e678cbab",
+        "resource": "https://api.vaults.fyi/v2/vaults",
+        "host": "api.vaults.fyi",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "888fa1aa8d390b02",
+        "resource": "https://api.vaults.fyi/v2/curators",
+        "host": "api.vaults.fyi",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "f2f82e8a0be62d0d",
+        "resource": "https://api.hyperextend.xyz/v1/asset_ctx/BTC/latest",
+        "host": "api.hyperextend.xyz",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "c09056ce1f0628a5",
+        "resource": "https://api.vaults.fyi/v2/networks",
+        "host": "api.vaults.fyi",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "fbb7b95630c3ccc8",
+        "resource": "https://api.hyperextend.xyz/v1/outcome_ctx/%231000/latest",
+        "host": "api.hyperextend.xyz",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "0ae9322d27b21a43",
+        "resource": "https://api.vaults.fyi/v2/tags",
+        "host": "api.vaults.fyi",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "f4801a883eeb66fc",
+        "resource": "https://api.vaults.fyi/v2/assets",
+        "host": "api.vaults.fyi",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "ef23fc12bd6d2267",
+        "resource": "https://api.hyperextend.xyz/v1/outcome/100/oi",
+        "host": "api.hyperextend.xyz",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "5b622ccea2e412ed",
+        "resource": "https://api.vaults.fyi/v2/portfolio/positions/:userAddress",
+        "host": "api.vaults.fyi",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "54bf0d474a41a19e",
+        "resource": "https://api.hyperextend.xyz/v1/candles/BTC/1m",
+        "host": "api.hyperextend.xyz",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "5bcd0c4e64a0cc82",
+        "resource": "https://api.vaults.fyi/v2/historical/:network/:vaultId/apy",
+        "host": "api.vaults.fyi",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "upto",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "0b1a3f0b6a3f9d31",
+        "resource": "https://api.vaults.fyi/v2/detailed-vaults",
+        "host": "api.vaults.fyi",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "39dd82a6794b0a91",
+        "resource": "https://api.hyperextend.xyz/v1/outcome_ctx/%231000",
+        "host": "api.hyperextend.xyz",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "a53148caf81d3764",
+        "resource": "https://api.hyperextend.xyz/v1/asset_ctx/BTC",
+        "host": "api.hyperextend.xyz",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      },
+      {
+        "id": "38ef9e3fdaf66811",
+        "resource": "https://sol.blockrun.ai/api/v1/chat/completions",
+        "host": "sol.blockrun.ai",
+        "pay_basis": "tied_min_positional",
+        "pay_alternatives_n": 1,
+        "schemes": [
+          "exact",
+          "batch-settlement"
+        ]
+      }
+    ]
+  }
+}

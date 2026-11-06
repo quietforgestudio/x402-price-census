@@ -1,0 +1,1551 @@
+{
+ "what_this_is": "Reader-vs-reader pairing of the per-route x402 rows in declared_vs_live.json against an independent reader's capture of the same URLs. One row per route the two readers share. This compares READER to READER. It does NOT compare the manifest's DECLARED terms to the live 402 -- that is declared_vs_live.json / ROUTE_LAYER.md, a different question.",
+ "readers": [
+  {
+   "name": "Quietforge Studio",
+   "id": "quietforge-studio",
+   "role": "census author (lead)",
+   "capture": "2026-11-02T04:09:01Z",
+   "what_it_captured": "accepts[0] as a per-entry tuple; the remaining entries as DISTINCT SETS of network/amount/asset only. EVM and base58 addresses are case-folded, which is lossy for base58.",
+   "artifact": "declared_vs_live.json in this repo",
+   "artifact_in_repo": "declared_vs_live.json",
+   "artifact_sha256_at_peer_capture": "93e41204fdcc056c0a0b3214bf0e01d85b3b3a945dcf7b7b959bdd25664048b1",
+   "artifact_bytes_at_peer_capture": 840177,
+   "artifact_sha256": "c1ecdf7e750ffafb1dbc976209a26294304e8f7ec593b9404b288733cb533866",
+   "artifact_bytes": 842640,
+   "artifact_sha256_status": "VERIFIED -- two digests, deliberately. The peer named 93e41204... for the 840,177-byte copy she took the 43 URLs from, and we re-fetched that published file and it matched. That version has since been SUPERSEDED in this repo by a repair recorded in ERRATA.md, so the file published here now is a different artifact with a different digest. Measured diff between the two: the 828 URLs are identical in the same order, every aggregate is identical, and exactly 13 rows differ, in two fields only (`payto_equal` and `verdict_reason`). Neither field is an input to the reader-vs-reader join, so the join below is unaffected."
+  },
+  {
+   "name": "Penny (x402-census-penny.surge.sh)",
+   "id": "penny-x402-census-reader/0.1",
+   "role": "independent second reader, different operator group",
+   "capture": "2026-11-03T23:01:14Z",
+   "capture_scope_verbatim": "parsed capture, raw bodies not retained",
+   "what_it_captured": "every accepts entry in served order, amounts atomic as served; 43 URLs taken byte-for-byte from declared_vs_live.json; one GET per URL 0.5 s apart, UA Penny-x402-census-reader/0.1, no payment.",
+   "artifact": "https://x402-census-penny.surge.sh/pairs/quietforge_43_2026-11-03.json",
+   "artifact_bytes": 22099,
+   "artifact_sha256": "ef7d7a4ce25fe9137efeeed64838caff571db3e23e07baeea5738d2cfccef40c",
+   "artifact_sha256_status": "VERIFIED -- fetched by us from that URL and hashed; 22,099 B, digest equal character for character.",
+   "permission_verbatim": "Fine to publish the join; please credit the rows as 'Penny (x402-census-penny.surge.sh)'.",
+   "permission_at": "2026-11-03T23:02:42Z",
+   "attributed_not_verified": [
+    {
+     "sha256": "676bb4cad5d525e92c54e6df19a1e0d8f0094657f2b3722e7832c5e6efc3ecf4",
+     "claim": "probe43.py, the reader that produced the 23:01:14Z rows",
+     "why_unverified": "we do not hold the file and it is not at a URL we can fetch."
+    },
+    {
+     "sha256": "c87cef6bbb33bbdee8b28b62496566746943b5b485a334d871d5e99fab3760df",
+     "claim": "MANIFEST.txt over the raw bodies of a SECOND capture started 2026-11-04T01:04:21Z",
+     "why_unverified": "/pairs/MANIFEST.txt returns a real 404; we hold no copy."
+    },
+    {
+     "sha256": "8d854900c7d1cd0be198d9fa2e23baa91cb7bf64bd0c069572bb16819784295e",
+     "claim": "sha256sum over 43 .headers.json files from the same second capture",
+     "why_unverified": "we hold none of those files."
+    },
+    {
+     "sha256": "75d72b127d873c868b085e945a6bfe1972d1026880d47914bc98b2a95a30c8b6",
+     "claim": "the second capture's parsed rows; 0 of 43 differ from the 23:01:14Z read (same HTTP codes, identical accepts arrays and order)",
+     "why_unverified": "we hold no copy of those rows."
+    }
+   ]
+  },
+  {
+   "name": "RNA",
+   "id": "RNA-linkcheck/1.0",
+   "role": "third reader, third operator group, ONE route",
+   "capture": "2026-11-04T14:54:44Z",
+   "what_it_captured": "all five accepts entries in wire order with per-entry (network, asset, amount, payTo), plus a raw byte count and a sha256 over the raw body.",
+   "artifact": "second_reading_saylorinnovations.md, posted in a shared workspace",
+   "artifact_sha256": "a6e1a8e9e068a358250f33824c0746ae4adf7a2e4026a4ca65afbc0374db7249",
+   "artifact_sha256_status": "VERIFIED -- fetched by us from that workspace and hashed; the digest RNA stated matches the document's own bytes.",
+   "permission_verbatim": "You have permission to publish these per-route rows and findings in `github.com/quietforgestudio/x402-price-census` under the MIT license, with attribution to RNA.",
+   "permission_at": "2026-11-04T14:56:15Z",
+   "attribution_verbatim": "RNA confirms that the 38-digit asset string was an artifact of markdown serialization on RNA's reporting pipeline, not a wire-level defect of the host.",
+   "attribution_at": "2026-11-05T12:36:21Z",
+   "attribution_scope": "RNA granted publication of this one sentence AND supplied its wording, in message 20261105T123621725500Z-82e424 of the shared workspace, in answer to our explicit ask. It is RNA's statement about RNA's own reporting pipeline; we hold no reproduction of it and derive nothing from it."
+  }
+ ],
+ "join": {
+  "peer": "penny-x402-census-reader/0.1",
+  "peer_probed_at": "2026-11-03T23:01:14Z",
+  "our_probed_at": "2026-11-02T04:09:01Z",
+  "paired_rows": 43,
+  "two_reader_rows": 32,
+  "verdict_counts": {
+   "INDEX0_AGREE": 32,
+   "INDEX0_AGREE_NOTATION_ONLY": 0,
+   "NETWORK_NOTATION_UNCOMPARABLE": 0,
+   "OFFER_SET_DIFFERS": 0,
+   "ORDER_DIFFERS": 0,
+   "TERMS_DIVERGENT": 0,
+   "WITHHELD_NO_OBSERVATION": 11
+  },
+  "declared_verdict_counts": {
+   "DECLARED_DIVERGENT_PER_PEER": 0,
+   "DECLARED_NOT_IN_PEER_ARRAY": 0,
+   "DECLARED_RESOLVED_BY_PEER": 30,
+   "DECLARED_UNRESOLVED": 13
+  },
+  "our_index": {
+   "ambiguous_urls_resolved_to_nothing": [],
+   "joinable_urls": 707,
+   "rows_with_empty_url_dropped": 121
+  },
+  "peer_only_urls": [],
+  "our_probed_urls_the_peer_did_not_read": [],
+  "malformed_peer_rows": [],
+  "rows_our_capture_could_not_resolve_that_the_peer_did": [
+   "https://saylorinnovations.com/api/kb/cname-domain-parking-dns-resource-records",
+   "https://saylorinnovations.com/api/kb/customizing-your-google-workspace-web-address",
+   "https://saylorinnovations.com/api/kb/forwarding-your-google-domain-to-a-url-or-ip",
+   "https://saylorinnovations.com/api/kb/google-dorking-search-shortcuts-reference",
+   "https://saylorinnovations.com/api/kb/how-flash-loans-smart-contracts-can-be-profitable",
+   "https://saylorinnovations.com/api/kb/installing-the-duino-coin-repo-on-linux-desktop",
+   "https://saylorinnovations.com/api/kb/mapping-a-new-url-in-google-sites",
+   "https://saylorinnovations.com/api/kb/repurposing-an-old-gpu-for-crypto-mining",
+   "https://saylorinnovations.com/api/kb/setting-up-chia-farming-with-a-raspberry-pi",
+   "https://saylorinnovations.com/api/kb/setting-up-the-naked-domain-for-your-google-site"
+  ],
+  "rows": [
+   {
+    "declared_reason": "the manifest declares no comparable (network, amount)",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {
+     "our_http": 200,
+     "peer_http": 200
+    },
+    "host": "saylorinnovations.com",
+    "our_verdict": "FREE_AS_DECLARED",
+    "reason": "both readers saw no payment challenge on a route the manifest declares free",
+    "url": "https://saylorinnovations.com/api/kb/how-to-tell-if-a-cryptocurrency-is-legit",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 10000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7lsjfrjf8fnsb8va9u7n3wen25smqlpob3svyuvxacy7, this entry 7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7, equal under case-folding); 2 peer entries carry that chain and amount; the one reported is the closest match on asset/payTo",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "101665"
+     ],
+     "our_index0": {
+      "amount": "10000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 6,
+     "our_other_entries_unpairable": 5,
+     "peer_tuples": [
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:42161",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "saylorinnovations.com",
+    "our_verdict": "AMOUNT_INDETERMINATE",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 10000",
+    "url": "https://saylorinnovations.com/api/kb/installing-the-duino-coin-repo-on-linux-desktop",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 10000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7lsjfrjf8fnsb8va9u7n3wen25smqlpob3svyuvxacy7, this entry 7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7, equal under case-folding); 2 peer entries carry that chain and amount; the one reported is the closest match on asset/payTo",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "101665"
+     ],
+     "our_index0": {
+      "amount": "10000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 6,
+     "our_other_entries_unpairable": 5,
+     "peer_tuples": [
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:42161",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "saylorinnovations.com",
+    "our_verdict": "AMOUNT_INDETERMINATE",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 10000",
+    "url": "https://saylorinnovations.com/api/kb/repurposing-an-old-gpu-for-crypto-mining",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 10000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7lsjfrjf8fnsb8va9u7n3wen25smqlpob3svyuvxacy7, this entry 7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7, equal under case-folding); 2 peer entries carry that chain and amount; the one reported is the closest match on asset/payTo",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "101665"
+     ],
+     "our_index0": {
+      "amount": "10000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 6,
+     "our_other_entries_unpairable": 5,
+     "peer_tuples": [
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:42161",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "saylorinnovations.com",
+    "our_verdict": "AMOUNT_INDETERMINATE",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 10000",
+    "url": "https://saylorinnovations.com/api/kb/setting-up-chia-farming-with-a-raspberry-pi",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 10000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7lsjfrjf8fnsb8va9u7n3wen25smqlpob3svyuvxacy7, this entry 7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7, equal under case-folding); 2 peer entries carry that chain and amount; the one reported is the closest match on asset/payTo",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "101665"
+     ],
+     "our_index0": {
+      "amount": "10000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 6,
+     "our_other_entries_unpairable": 5,
+     "peer_tuples": [
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:42161",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "saylorinnovations.com",
+    "our_verdict": "AMOUNT_INDETERMINATE",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 10000",
+    "url": "https://saylorinnovations.com/api/kb/how-flash-loans-smart-contracts-can-be-profitable",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 10000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7lsjfrjf8fnsb8va9u7n3wen25smqlpob3svyuvxacy7, this entry 7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7, equal under case-folding); 2 peer entries carry that chain and amount; the one reported is the closest match on asset/payTo",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "101665"
+     ],
+     "our_index0": {
+      "amount": "10000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 6,
+     "our_other_entries_unpairable": 5,
+     "peer_tuples": [
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:42161",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "saylorinnovations.com",
+    "our_verdict": "AMOUNT_INDETERMINATE",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 10000",
+    "url": "https://saylorinnovations.com/api/kb/google-dorking-search-shortcuts-reference",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the manifest declares no comparable (network, amount)",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {
+     "our_http": 200,
+     "peer_http": 200
+    },
+    "host": "saylorinnovations.com",
+    "our_verdict": "FREE_AS_DECLARED",
+    "reason": "both readers saw no payment challenge on a route the manifest declares free",
+    "url": "https://saylorinnovations.com/api/kb/adding-a-cname-record-to-your-domain",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 10000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7lsjfrjf8fnsb8va9u7n3wen25smqlpob3svyuvxacy7, this entry 7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7, equal under case-folding); 2 peer entries carry that chain and amount; the one reported is the closest match on asset/payTo",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "101665"
+     ],
+     "our_index0": {
+      "amount": "10000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 6,
+     "our_other_entries_unpairable": 5,
+     "peer_tuples": [
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:42161",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "saylorinnovations.com",
+    "our_verdict": "AMOUNT_INDETERMINATE",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 10000",
+    "url": "https://saylorinnovations.com/api/kb/cname-domain-parking-dns-resource-records",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 10000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7lsjfrjf8fnsb8va9u7n3wen25smqlpob3svyuvxacy7, this entry 7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7, equal under case-folding); 2 peer entries carry that chain and amount; the one reported is the closest match on asset/payTo",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "101665"
+     ],
+     "our_index0": {
+      "amount": "10000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 6,
+     "our_other_entries_unpairable": 5,
+     "peer_tuples": [
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:42161",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "saylorinnovations.com",
+    "our_verdict": "AMOUNT_INDETERMINATE",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 10000",
+    "url": "https://saylorinnovations.com/api/kb/customizing-your-google-workspace-web-address",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 10000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7lsjfrjf8fnsb8va9u7n3wen25smqlpob3svyuvxacy7, this entry 7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7, equal under case-folding); 2 peer entries carry that chain and amount; the one reported is the closest match on asset/payTo",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "101665"
+     ],
+     "our_index0": {
+      "amount": "10000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 6,
+     "our_other_entries_unpairable": 5,
+     "peer_tuples": [
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:42161",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "saylorinnovations.com",
+    "our_verdict": "AMOUNT_INDETERMINATE",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 10000",
+    "url": "https://saylorinnovations.com/api/kb/forwarding-your-google-domain-to-a-url-or-ip",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 10000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7lsjfrjf8fnsb8va9u7n3wen25smqlpob3svyuvxacy7, this entry 7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7, equal under case-folding); 2 peer entries carry that chain and amount; the one reported is the closest match on asset/payTo",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "101665"
+     ],
+     "our_index0": {
+      "amount": "10000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 6,
+     "our_other_entries_unpairable": 5,
+     "peer_tuples": [
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:42161",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "saylorinnovations.com",
+    "our_verdict": "AMOUNT_INDETERMINATE",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 10000",
+    "url": "https://saylorinnovations.com/api/kb/mapping-a-new-url-in-google-sites",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 10000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7lsjfrjf8fnsb8va9u7n3wen25smqlpob3svyuvxacy7, this entry 7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7, equal under case-folding); 2 peer entries carry that chain and amount; the one reported is the closest match on asset/payTo",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "101665"
+     ],
+     "our_index0": {
+      "amount": "10000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 6,
+     "our_other_entries_unpairable": 5,
+     "peer_tuples": [
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:42161",
+       "notation": "unknown"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "saylorinnovations.com",
+    "our_verdict": "AMOUNT_INDETERMINATE",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 10000",
+    "url": "https://saylorinnovations.com/api/kb/setting-up-the-naked-domain-for-your-google-site",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 80000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7g73plhkvapbgtzg5esae4coe7qrvettkfhtxqzbyggc, this entry 7G73PLhKvAPBGTzG5ESAE4coE7QrVeTTKfhTxQZbyGgC, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "80000"
+     ],
+     "our_index0": {
+      "amount": "80000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "bare"
+     },
+     "our_live_accepts_n": 1,
+     "our_other_entries_unpairable": 0,
+     "peer_tuples": [
+      {
+       "amount": "80000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "bare"
+      }
+     ]
+    },
+    "host": "mpp.hyreagent.fun",
+    "our_verdict": "AMOUNT_OK_NETWORK_NOTATION",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 80000",
+    "url": "https://mpp.hyreagent.fun/trenches/new-tokens",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer captured no entry carrying both a network and an amount",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {},
+    "host": "mpp.hyreagent.fun",
+    "our_verdict": "INDETERMINATE",
+    "reason": "neither reader captured a comparable priced entry",
+    "url": "https://mpp.hyreagent.fun/trenches/curve",
+    "verdict": "WITHHELD_NO_OBSERVATION"
+   },
+   {
+    "declared_reason": "the peer captured no entry carrying both a network and an amount",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {},
+    "host": "mpp.hyreagent.fun",
+    "our_verdict": "INDETERMINATE",
+    "reason": "neither reader captured a comparable priced entry",
+    "url": "https://mpp.hyreagent.fun/trenches/token-snipers",
+    "verdict": "WITHHELD_NO_OBSERVATION"
+   },
+   {
+    "declared_reason": "the peer captured no entry carrying both a network and an amount",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {},
+    "host": "mpp.hyreagent.fun",
+    "our_verdict": "INDETERMINATE",
+    "reason": "neither reader captured a comparable priced entry",
+    "url": "https://mpp.hyreagent.fun/trenches/token-verdict",
+    "verdict": "WITHHELD_NO_OBSERVATION"
+   },
+   {
+    "declared_reason": "the peer captured no entry carrying both a network and an amount",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {},
+    "host": "mpp.hyreagent.fun",
+    "our_verdict": "INDETERMINATE",
+    "reason": "neither reader captured a comparable priced entry",
+    "url": "https://mpp.hyreagent.fun/trenches/token",
+    "verdict": "WITHHELD_NO_OBSERVATION"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 30000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7g73plhkvapbgtzg5esae4coe7qrvettkfhtxqzbyggc, this entry 7G73PLhKvAPBGTzG5ESAE4coE7QrVeTTKfhTxQZbyGgC, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "30000"
+     ],
+     "our_index0": {
+      "amount": "30000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "bare"
+     },
+     "our_live_accepts_n": 1,
+     "our_other_entries_unpairable": 0,
+     "peer_tuples": [
+      {
+       "amount": "30000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "bare"
+      }
+     ]
+    },
+    "host": "mpp.hyreagent.fun",
+    "our_verdict": "AMOUNT_OK_NETWORK_NOTATION",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 30000",
+    "url": "https://mpp.hyreagent.fun/trenches/graduating",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 80000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7g73plhkvapbgtzg5esae4coe7qrvettkfhtxqzbyggc, this entry 7G73PLhKvAPBGTzG5ESAE4coE7QrVeTTKfhTxQZbyGgC, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "80000"
+     ],
+     "our_index0": {
+      "amount": "80000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "bare"
+     },
+     "our_live_accepts_n": 1,
+     "our_other_entries_unpairable": 0,
+     "peer_tuples": [
+      {
+       "amount": "80000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "bare"
+      }
+     ]
+    },
+    "host": "mpp.hyreagent.fun",
+    "our_verdict": "AMOUNT_OK_NETWORK_NOTATION",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 80000",
+    "url": "https://mpp.hyreagent.fun/trenches/bags/new-tokens",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer captured no entry carrying both a network and an amount",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {},
+    "host": "mpp.hyreagent.fun",
+    "our_verdict": "INDETERMINATE",
+    "reason": "neither reader captured a comparable priced entry",
+    "url": "https://mpp.hyreagent.fun/traders/wallet-pnl",
+    "verdict": "WITHHELD_NO_OBSERVATION"
+   },
+   {
+    "declared_reason": "the peer captured no entry carrying both a network and an amount",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {},
+    "host": "mpp.hyreagent.fun",
+    "our_verdict": "INDETERMINATE",
+    "reason": "neither reader captured a comparable priced entry",
+    "url": "https://mpp.hyreagent.fun/traders/wallet-positions",
+    "verdict": "WITHHELD_NO_OBSERVATION"
+   },
+   {
+    "declared_reason": "the peer captured no entry carrying both a network and an amount",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {},
+    "host": "mpp.hyreagent.fun",
+    "our_verdict": "INDETERMINATE",
+    "reason": "neither reader captured a comparable priced entry",
+    "url": "https://mpp.hyreagent.fun/traders/wallet-intel",
+    "verdict": "WITHHELD_NO_OBSERVATION"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 80000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 7g73plhkvapbgtzg5esae4coe7qrvettkfhtxqzbyggc, this entry 7G73PLhKvAPBGTzG5ESAE4coE7QrVeTTKfhTxQZbyGgC, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "80000"
+     ],
+     "our_index0": {
+      "amount": "80000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "bare"
+     },
+     "our_live_accepts_n": 1,
+     "our_other_entries_unpairable": 0,
+     "peer_tuples": [
+      {
+       "amount": "80000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "bare"
+      }
+     ]
+    },
+    "host": "mpp.hyreagent.fun",
+    "our_verdict": "AMOUNT_OK_NETWORK_NOTATION",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 80000",
+    "url": "https://mpp.hyreagent.fun/traders/top-wallets",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer captured no entry carrying both a network and an amount",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {},
+    "host": "mpp.hyreagent.fun",
+    "our_verdict": "INDETERMINATE",
+    "reason": "neither reader captured a comparable priced entry",
+    "url": "https://mpp.hyreagent.fun/traders/token-whales",
+    "verdict": "WITHHELD_NO_OBSERVATION"
+   },
+   {
+    "declared_reason": "the manifest declares no comparable (network, amount)",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {},
+    "host": "47620.xyz",
+    "our_verdict": "INDETERMINATE",
+    "reason": "neither reader captured a comparable priced entry",
+    "url": "https://47620.xyz/buy",
+    "verdict": "WITHHELD_NO_OBSERVATION"
+   },
+   {
+    "declared_reason": "the manifest declares no comparable (network, amount)",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {},
+    "host": "47620.xyz",
+    "our_verdict": "INDETERMINATE",
+    "reason": "neither reader captured a comparable priced entry",
+    "url": "https://47620.xyz/buy/prod_1789829521418_y4jtdv",
+    "verdict": "WITHHELD_NO_OBSERVATION"
+   },
+   {
+    "declared_reason": "the manifest declares no comparable (network, amount)",
+    "declared_verdict": "DECLARED_UNRESOLVED",
+    "detail": {},
+    "host": "47620.xyz",
+    "our_verdict": "INDETERMINATE",
+    "reason": "neither reader captured a comparable priced entry",
+    "url": "https://47620.xyz/x/catalog",
+    "verdict": "WITHHELD_NO_OBSERVATION"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 20000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 8izbjedtimyvyge9pzbhpm7k2kexrqwaucpsaxhm7j68, this entry 8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "20000"
+     ],
+     "our_index0": {
+      "amount": "20000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 3,
+     "our_other_entries_unpairable": 2,
+     "peer_tuples": [
+      {
+       "amount": "20000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "20000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "20000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      }
+     ]
+    },
+    "host": "47620.xyz",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 20000",
+    "url": "https://47620.xyz/x/snapshot",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 5000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 8izbjedtimyvyge9pzbhpm7k2kexrqwaucpsaxhm7j68, this entry 8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "5000"
+     ],
+     "our_index0": {
+      "amount": "5000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 3,
+     "our_other_entries_unpairable": 2,
+     "peer_tuples": [
+      {
+       "amount": "5000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      }
+     ]
+    },
+    "host": "47620.xyz",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 5000",
+    "url": "https://47620.xyz/x/health",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 5000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 8izbjedtimyvyge9pzbhpm7k2kexrqwaucpsaxhm7j68, this entry 8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "5000"
+     ],
+     "our_index0": {
+      "amount": "5000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 3,
+     "our_other_entries_unpairable": 2,
+     "peer_tuples": [
+      {
+       "amount": "5000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      }
+     ]
+    },
+    "host": "47620.xyz",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 5000",
+    "url": "https://47620.xyz/x/trending",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 5000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 8izbjedtimyvyge9pzbhpm7k2kexrqwaucpsaxhm7j68, this entry 8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "5000"
+     ],
+     "our_index0": {
+      "amount": "5000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 3,
+     "our_other_entries_unpairable": 2,
+     "peer_tuples": [
+      {
+       "amount": "5000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      }
+     ]
+    },
+    "host": "47620.xyz",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 5000",
+    "url": "https://47620.xyz/x/multi-account?addresses=",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 5000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 8izbjedtimyvyge9pzbhpm7k2kexrqwaucpsaxhm7j68, this entry 8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "5000"
+     ],
+     "our_index0": {
+      "amount": "5000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 3,
+     "our_other_entries_unpairable": 2,
+     "peer_tuples": [
+      {
+       "amount": "5000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      }
+     ]
+    },
+    "host": "47620.xyz",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 5000",
+    "url": "https://47620.xyz/x/new-pairs",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 5000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 8izbjedtimyvyge9pzbhpm7k2kexrqwaucpsaxhm7j68, this entry 8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "5000"
+     ],
+     "our_index0": {
+      "amount": "5000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 3,
+     "our_other_entries_unpairable": 2,
+     "peer_tuples": [
+      {
+       "amount": "5000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      }
+     ]
+    },
+    "host": "47620.xyz",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 5000",
+    "url": "https://47620.xyz/x/slot",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 5000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 8izbjedtimyvyge9pzbhpm7k2kexrqwaucpsaxhm7j68, this entry 8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "5000"
+     ],
+     "our_index0": {
+      "amount": "5000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 3,
+     "our_other_entries_unpairable": 2,
+     "peer_tuples": [
+      {
+       "amount": "5000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      }
+     ]
+    },
+    "host": "47620.xyz",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 5000",
+    "url": "https://47620.xyz/x/epoch",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 5000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 8izbjedtimyvyge9pzbhpm7k2kexrqwaucpsaxhm7j68, this entry 8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000",
+      "5000"
+     ],
+     "our_index0": {
+      "amount": "5000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 3,
+     "our_other_entries_unpairable": 2,
+     "peer_tuples": [
+      {
+       "amount": "5000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "10000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      }
+     ]
+    },
+    "host": "47620.xyz",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 5000",
+    "url": "https://47620.xyz/x/supply",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp at 20000 in ONE entry, matching the manifest; asset not compared (our census case-folds this notation, so case-only inequality is not assertable; declared epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v, this entry EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v, equal under case-folding); payTo not compared (our census case-folds this notation, so case-only inequality is not assertable; declared 8izbjedtimyvyge9pzbhpm7k2kexrqwaucpsaxhm7j68, this entry 8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68, equal under case-folding)",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "20000"
+     ],
+     "our_index0": {
+      "amount": "20000",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 3,
+     "our_other_entries_unpairable": 2,
+     "peer_tuples": [
+      {
+       "amount": "20000",
+       "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+       "notation": "caip2"
+      },
+      {
+       "amount": "20000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      },
+      {
+       "amount": "20000",
+       "network": "eip155:137",
+       "notation": "unknown"
+      }
+     ]
+    },
+    "host": "47620.xyz",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp, amount 20000",
+    "url": "https://47620.xyz/x/performance",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain eip155:8453 at 10000 in ONE entry, matching the manifest; asset agrees; payTo agrees",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "10000"
+     ],
+     "our_index0": {
+      "amount": "10000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 1,
+     "our_other_entries_unpairable": 0,
+     "peer_tuples": [
+      {
+       "amount": "10000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "cleanread402.netlify.app",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 10000",
+    "url": "https://cleanread402.netlify.app/read",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain eip155:8453 at 5000 in ONE entry, matching the manifest; asset agrees; payTo agrees",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "5000"
+     ],
+     "our_index0": {
+      "amount": "5000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 1,
+     "our_other_entries_unpairable": 0,
+     "peer_tuples": [
+      {
+       "amount": "5000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "cleanread402.netlify.app",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 5000",
+    "url": "https://cleanread402.netlify.app/feed",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain eip155:8453 at 5000 in ONE entry, matching the manifest; asset agrees; payTo agrees",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "5000"
+     ],
+     "our_index0": {
+      "amount": "5000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 1,
+     "our_other_entries_unpairable": 0,
+     "peer_tuples": [
+      {
+       "amount": "5000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "cleanread402.netlify.app",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 5000",
+    "url": "https://cleanread402.netlify.app/meta",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain eip155:8453 at 2000 in ONE entry, matching the manifest; asset agrees; payTo agrees",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "2000"
+     ],
+     "our_index0": {
+      "amount": "2000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 1,
+     "our_other_entries_unpairable": 0,
+     "peer_tuples": [
+      {
+       "amount": "2000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "cleanread402.netlify.app",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 2000",
+    "url": "https://cleanread402.netlify.app/unshorten",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain eip155:8453 at 3000 in ONE entry, matching the manifest; asset agrees; payTo agrees",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "3000"
+     ],
+     "our_index0": {
+      "amount": "3000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 1,
+     "our_other_entries_unpairable": 0,
+     "peer_tuples": [
+      {
+       "amount": "3000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "cleanread402.netlify.app",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 3000",
+    "url": "https://cleanread402.netlify.app/dns",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain eip155:8453 at 2000 in ONE entry, matching the manifest; asset agrees; payTo agrees",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "2000"
+     ],
+     "our_index0": {
+      "amount": "2000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 1,
+     "our_other_entries_unpairable": 0,
+     "peer_tuples": [
+      {
+       "amount": "2000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "cleanread402.netlify.app",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 2000",
+    "url": "https://cleanread402.netlify.app/qr",
+    "verdict": "INDEX0_AGREE"
+   },
+   {
+    "declared_reason": "the peer priced the declared chain eip155:8453 at 2000 in ONE entry, matching the manifest; asset agrees; payTo agrees",
+    "declared_verdict": "DECLARED_RESOLVED_BY_PEER",
+    "detail": {
+     "our_amount_set": [
+      "2000"
+     ],
+     "our_index0": {
+      "amount": "2000",
+      "network": "eip155:8453",
+      "notation": "caip2"
+     },
+     "our_live_accepts_n": 1,
+     "our_other_entries_unpairable": 0,
+     "peer_tuples": [
+      {
+       "amount": "2000",
+       "network": "eip155:8453",
+       "notation": "caip2"
+      }
+     ]
+    },
+    "host": "cleanread402.netlify.app",
+    "our_verdict": "OK",
+    "reason": "accepts[0] agrees: chain eip155:8453, amount 2000",
+    "url": "https://cleanread402.netlify.app/textstats",
+    "verdict": "INDEX0_AGREE"
+   }
+  ]
+ },
+ "third_reading_one_route": {
+  "url": "https://saylorinnovations.com/api/kb/repurposing-an-old-gpu-for-crypto-mining",
+  "why_this_route": "the one route in the table whose own verdict is AMOUNT_INDETERMINATE and whose live offer set was observed to CHANGE between readings, so a third independent reading is worth more here than anywhere else.",
+  "readings": [
+   {
+    "reader": "Quietforge Studio",
+    "captured_at": "2026-11-02T04:09:01Z",
+    "http": 402,
+    "accepts_n": 6,
+    "distinct_amounts": [
+     "10000",
+     "101665"
+    ],
+    "per_entry_tuples": null,
+    "note": "this capture stored accepts[0] as a tuple and the rest as sets, so which entry carried 101665 is not recoverable from it."
+   },
+   {
+    "reader": "Penny (x402-census-penny.surge.sh)",
+    "captured_at": "2026-11-03T23:01:14Z",
+    "http": 402,
+    "accepts_n": 5,
+    "distinct_amounts": [
+     "10000"
+    ],
+    "networks_in_wire_order": [
+     "eip155:8453",
+     "eip155:137",
+     "eip155:42161",
+     "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+     "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp"
+    ]
+   },
+   {
+    "reader": "RNA",
+    "captured_at": "2026-11-04T14:54:44Z",
+    "http": 402,
+    "accepts_n": 5,
+    "raw_bytes_claimed": 5468,
+    "raw_body_sha256_claimed": "6671a23c75b26e5ef94e42633f4944cc81b978cbf588707a728c3f1d677ef227",
+    "distinct_amounts": [
+     "10000"
+    ],
+    "per_entry_tuples_as_published_by_rna": [
+     [
+      "eip155:8453",
+      "0x833589fCD6eDb6E08f4C32D4f71b54bdA02913",
+      "10000",
+      "0xA2A8dF0f7CaaBEa4e120a2568118f141569fc8aa"
+     ],
+     [
+      "eip155:137",
+      "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+      "10000",
+      "0xA2A8dF0f7CaaBEa4e120a2568118f141569fc8aa"
+     ],
+     [
+      "eip155:42161",
+      "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "10000",
+      "0xA2A8dF0f7CaaBEa4e120a2568118f141569fc8aa"
+     ],
+     [
+      "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "10000",
+      "7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7"
+     ],
+     [
+      "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "10000",
+      "7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7"
+     ]
+    ]
+   },
+   {
+    "reader": "Quietforge Studio",
+    "captured_at": "2026-11-04T16:03:02Z",
+    "http": 402,
+    "accepts_n": 5,
+    "raw_bytes": 5468,
+    "raw_body_sha256": "9e6898b7104cea1f480d46d8106c17794d2f021fbdcfd8af8f9477b9a8591014",
+    "distinct_amounts": [
+     "10000"
+    ],
+    "per_entry_tuples": [
+     [
+      "eip155:8453",
+      "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "10000",
+      "0xA2A8dF0f7CaaBEa4e120a2568118f141569fc8aa"
+     ],
+     [
+      "eip155:137",
+      "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+      "10000",
+      "0xA2A8dF0f7CaaBEa4e120a2568118f141569fc8aa"
+     ],
+     [
+      "eip155:42161",
+      "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "10000",
+      "0xA2A8dF0f7CaaBEa4e120a2568118f141569fc8aa"
+     ],
+     [
+      "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "10000",
+      "7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7"
+     ],
+     [
+      "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "10000",
+      "7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7"
+     ]
+    ],
+    "note": "re-read 45 s later and byte-identical, so the body is stable at that interval from this vantage point."
+   }
+  ],
+  "agreements": [
+   "accepts length 5 on all three readings taken after 2026-11-03T23:01Z",
+   "every amount 10000 on all three of those readings",
+   "network wire order identical on Penny's, RNA's and our 2026-11-04 readings",
+   "entries 2-5 asset and payTo identical, character for character, between RNA's published tuples and our 2026-11-04 reading"
+  ],
+  "one_field_that_does_not_reconcile": {
+   "field": "accepts[0].asset",
+   "rna_published_value": "0x833589fCD6eDb6E08f4C32D4f71b54bdA02913",
+   "rna_published_value_hex_digits": 38,
+   "our_live_value": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+   "our_live_value_hex_digits": 40,
+   "deleted_chars": "c7",
+   "deleted_at_offset": 21,
+   "statement": "RNA's published value for this one field is 38 hex digits -- 19 bytes -- which is not a valid EVM address length; every other EVM value in RNA's own reading is 40. The value we read is 40 hex digits and is EIP-55 checksum-valid. Deleting the two characters 'c7' at offset 21 of our value yields RNA's value exactly.",
+   "why_the_bytes_say_this_is_a_transcription_defect": "RNA reports 5,468 raw bytes, the same count we read. The asset value appears verbatim as a JSON string in the body, so a body carrying RNA's 38-digit value would be 5,466 bytes. 5,468 is consistent with the 40-digit value, not with RNA's transcription of it.",
+   "what_we_cannot_settle": "RNA's raw-body sha256 differs from ours while the byte count is equal, and our stability test covers 45 seconds, not the 69 minutes between the two captures. So we cannot exclude a length-preserving change to the body in that window. Either way the 38-digit string is not what any reader could have been served.",
+   "not_a_misprice": "every reading agrees the price is a uniform 10000 atomic units. Nothing here says this host charges other than it publishes."
+  }
+ },
+ "limits": [
+  "This is READER vs READER. Two agreeing readers establish that a host served the same accepts[0] to two vantage points. They establish nothing about whether the manifest's DECLARED terms match the live charge.",
+  "Our capture holds ONE genuine per-entry tuple (accepts[0]); the remaining entries are distinct SETS. So index 0 is pairable and the remainder is not, and every graded row reports our_other_entries_unpairable.",
+  "Our census case-folds addresses. A case-only difference in a base58 value is therefore not assertable from our side and is WITHHELD with the reason printed -- we cannot prove no real case-only difference is hidden by that fold.",
+  "Ordering stability is only testable where both arrays hold 2 or more entries.",
+  "A sha256 pins BYTES, not WHEN. Every reading here carries its capture instant for that reason; two readings of one host taken at different instants can differ because the host changed, not because a reader is wrong.",
+  "One vantage point per reader. An offer set or an outage seen from one network path is not a global fact.",
+  "No host in this document is named as mispriced, and none of these readings supports such a claim."
+ ],
+ "licence": "MIT (this repo). Penny's rows and RNA's rows are published with the permission quoted verbatim above, with the attribution each reader asked for.",
+ "derived_from": {
+  "join": "work-tree route_pair.py run of 2026-11-03, rows reproduced here verbatim",
+  "verifier": "verify_paired.py in this directory re-derives every number in PAIRED_READINGS.md from this file"
+ }
+}
